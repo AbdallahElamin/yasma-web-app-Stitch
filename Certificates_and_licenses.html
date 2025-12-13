@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>YASMA Certificates & Licenses</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols_Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">engineering</span>
+                </div>
+                <div class="logo-text">
+                    <h1>YASMA</h1>
+                    <span>Contracting Co.</span>
+                </div>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu">
+                <a class="nav-link" href="Landing_Page.html">Home</a>
+                <a class="nav-link" href="About_Us.html">About Us</a>
+                <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+                <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+                <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+            </nav>
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button aria-label="Toggle theme" class="btn-icon" id="theme-toggle">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+                <button class="btn-lang" id="lang-toggle">EN</button>
+                <button class="btn-primary">Get Quote</button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="btn-mobile-menu" id="mobile-menu-toggle">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-links">
+            <a class="nav-link" href="Landing_Page.html">Home</a>
+            <a class="nav-link" href="About_Us.html">About Us</a>
+            <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+            <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+        </div>
+        <div class="mobile-menu-actions">
+            <button aria-label="Toggle theme" class="btn-icon"
+                onclick="document.getElementById('theme-toggle').click()">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+            <button class="btn-lang" onclick="document.getElementById('lang-toggle').click()">EN</button>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <div
+            style="position: relative; display: flex; min-height: 400px; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAdOFyayphHN4BsQ0QpYDAUTqH-C_8owQHIPR9vTdHJctRvvsGXwMlKMHUR5C9yyecfi3n8YVx8G1gKOT6actsmEEjjco1vfn9P68lFjCR7w4U2o9tnNkJhGJI1B76B77TtvdigRovkT-Dp5GoXcJZR4XrU3ichXciUvb0vWoDXTFt7IT0-fSBAcQ5cIXUV7cF0mu76-45lvGco5TqN8xrVtsEOL7DkwuZWpK_AxDkOkufjoCd9nkUdbHEthHVVaXGGClmQefIopu0'); background-size: cover; background-position: center; padding: 5rem 1rem; text-align: center;">
+            <div style="display: flex; max-width: 50rem; flex-direction: column; gap: 1rem;">
+                <h1
+                    style="color: white; font-size: clamp(2.5rem, 5vw, 4rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em;">
+                    Certificates & Licenses
+                </h1>
+                <p style="color: #E5E7EB; font-size: 1rem; line-height: 1.75;">
+                    Transparency and compliance are at the core of our operations. Explore our official certifications
+                    demonstrating our commitment to excellence in the Saudi construction sector.
+                </p>
+            </div>
+        </div>
+
+        <!-- Content Container -->
+        <div
+            style="margin: 0 auto; display: flex; width: 100%; max-width: 75rem; flex-direction: column; gap: 4rem; padding: 4rem 1rem;">
+            <!-- Item 1: Image Left, Text Right -->
+            <div style="display: flex; flex-direction: column; gap: 2rem; align-items: center;">
+                <style>
+                    @media (min-width: 768px) {
+                        .cert-row {
+                            flex-direction: row;
+                            gap: 3rem;
+                        }
+
+                        .cert-row-reverse {
+                            flex-direction: row-reverse;
+                            gap: 3rem;
+                        }
+                    }
+
+                    @media (min-width: 1024px) {
+
+                        .cert-row,
+                        .cert-row-reverse {
+                            gap: 5rem;
+                        }
+                    }
+                </style>
+                <div class="cert-row"
+                    style="display: flex; flex-direction: column; gap: 2rem; align-items: center; width: 100%;">
+                    <!-- Image Section -->
+                    <div style="width: 100%;">
+                        <style>
+                            @media (min-width: 768px) {
+                                .cert-image {
+                                    width: 50%;
+                                }
+                            }
+                        </style>
+                        <div class="cert-image" style="width: 100%;">
+                            <div
+                                style="position: relative; aspect-ratio: 4/3; width: 100%; overflow: hidden; border-radius: 1rem; border: 1px solid var(--color-border); background-color: var(--color-surface); box-shadow: var(--shadow-lg); transition: transform 0.3s;">
+                                <div
+                                    style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-alt);">
+                                    <span class="material-symbols-outlined"
+                                        style="font-size: 4rem; color: var(--color-text-muted); opacity: 0.3;">article</span>
+                                </div>
+                                <img alt="Commercial Registration Document"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBo5daem93NO8bmg90fqpau2_fpVau8hqOta3SsPMQG63eki6IHTCHHOBmWJ80OycRjrwC7P_DqHYzpZNS9ufb0cJLy6cc2bUHih5QhXCbmIE5OpWxXBx3yXD-Qn7s0faGqiaAMsW3Zj61zI6WVfN1nPQitzO21A42TUe_99v-cDS51dla4w665nqDaXPeXDyfaWXsQlUyX4RnSbAvVhqhkzhH7hU2AjCNcnLI-Qefrc0XMgi3umzSjukWTGHLOIsr4KYOaOWOi9I4"
+                                    style="position: relative; z-index: 10; height: 100%; width: 100%; object-fit: cover; opacity: 0.9;" />
+                                <div
+                                    style="position: absolute; bottom: 1rem; right: 1rem; z-index: 20; border-radius: 9999px; background-color: var(--color-surface); padding: 0.5rem; box-shadow: var(--shadow-md);">
+                                    <span class="material-symbols-outlined text-primary">verified</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Text Section -->
+                    <div style="display: flex; width: 100%; flex-direction: column; gap: 1rem;">
+                        <style>
+                            @media (min-width: 768px) {
+                                .cert-text {
+                                    width: 50%;
+                                }
+                            }
+                        </style>
+                        <div class="cert-text" style="width: 100%;">
+                            <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                                <div style="height: 2rem; width: 4px; background-color: var(--color-primary);"></div>
+                                <h2 style="font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700;">Commercial
+                                    Registration</h2>
+                            </div>
+                            <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1rem;">
+                                Issued by the Ministry of Commerce, our Commercial Registration (CR) validates YASMA's
+                                legal standing as a fully authorized contracting entity in the Kingdom of Saudi Arabia.
+                                This document ensures full compliance for all contracting operations.
+                            </p>
+                            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                                <button class="btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span class="material-symbols-outlined" style="font-size: 1.25rem;">download</span>
+                                    <span>Download PDF</span>
+                                </button>
+                                <button class="btn-secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <span class="material-symbols-outlined"
+                                        style="font-size: 1.25rem;">visibility</span>
+                                    <span>View Full Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator -->
+            <div style="height: 1px; width: 100%; background-color: var(--color-border);"></div>
+
+            <!-- Item 2: Text Left, Image Right (Reverse) -->
+            <div class="cert-row-reverse"
+                style="display: flex; flex-direction: column; gap: 2rem; align-items: center; width: 100%;">
+                <!-- Image Section -->
+                <div class="cert-image" style="width: 100%;">
+                    <div
+                        style="position: relative; aspect-ratio: 4/3; width: 100%; overflow: hidden; border-radius: 1rem; border: 1px solid var(--color-border); background-color: var(--color-surface); box-shadow: var(--shadow-lg); transition: transform 0.3s;">
+                        <div
+                            style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-alt);">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 4rem; color: var(--color-text-muted); opacity: 0.3;">workspace_premium</span>
+                        </div>
+                        <img alt="Chamber of Commerce Membership"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF-as_YNQymarnf7q9srf_0HqnnPaPeh66mjK-x47HRmBCoAJHvRrBI7WvdJKTNj-QnLeuTTbh2lQdtJ-mmfQV-Ksc50_JGXKfAyqlxE4yvKxa0ZydLBdKLG2cQnsnfh-ARC-o49wd0SFWjJTPlyl20lyEt94D49UWRWtuTlYb8Q6sGptqmVk3Dm6VMuzSByrzG1D62vSJDd04AYNLRFYvawgND-MVA_fO2VeR0R0LptFxhQQ2sWCO4xHaA9H_s-_V0omAMEGeo3k"
+                            style="position: relative; z-index: 10; height: 100%; width: 100%; object-fit: cover; opacity: 0.9;" />
+                        <div
+                            style="position: absolute; bottom: 1rem; left: 1rem; z-index: 20; border-radius: 9999px; background-color: var(--color-surface); padding: 0.5rem; box-shadow: var(--shadow-md);">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Section -->
+                <div class="cert-text" style="width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="height: 2rem; width: 4px; background-color: var(--color-primary);"></div>
+                        <h2 style="font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700;">Chamber of Commerce
+                            Membership</h2>
+                    </div>
+                    <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1rem;">
+                        Our active membership with the Riyadh Chamber of Commerce demonstrates our solid standing within
+                        the business community. This certification validates our participation in the local economic
+                        ecosystem and adherence to commercial standards.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <button class="btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">download</span>
+                            <span>Download PDF</span>
+                        </button>
+                        <button class="btn-secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">visibility</span>
+                            <span>View Full Details</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator -->
+            <div style="height: 1px; width: 100%; background-color: var(--color-border);"></div>
+
+            <!-- Item 3: Image Left, Text Right -->
+            <div class="cert-row"
+                style="display: flex; flex-direction: column; gap: 2rem; align-items: center; width: 100%;">
+                <!-- Image Section -->
+                <div class="cert-image" style="width: 100%;">
+                    <div
+                        style="position: relative; aspect-ratio: 4/3; width: 100%; overflow: hidden; border-radius: 1rem; border: 1px solid var(--color-border); background-color: var(--color-surface); box-shadow: var(--shadow-lg);">
+                        <div
+                            style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-alt);">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 4rem; color: var(--color-text-muted); opacity: 0.3;">construction</span>
+                        </div>
+                        <img alt="Contractor Classification Certificate"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAM3R17xJzTviGrBC-xioyx_I-uOtyy5h7B_PvzJv4Lg7NAPf0DUnz59lyrWBVAAsJvhjnAHunSyL-XC62RcGrPqGDks0ab0i0J1I2kXxGU2_UqtKIGJX1gsA8Ghg821ZnXm6JcSMdTXa6Aw8UY0gvEj_owril3RyXEoGdBFPd2Ay1bpq-n0Cclv5t6XlkZ2E0Yl6ROFRmATSEgu84AQG0L3n16dnK7q6iL2FmcVRTN_lOVXJklREdsaNvt0JUpDmvpyRnq3z5FoHI"
+                            style="position: relative; z-index: 10; height: 100%; width: 100%; object-fit: cover; opacity: 0.9;" />
+                        <div
+                            style="position: absolute; bottom: 1rem; right: 1rem; z-index: 20; border-radius: 9999px; background-color: var(--color-surface); padding: 0.5rem; box-shadow: var(--shadow-md);">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Section -->
+                <div class="cert-text" style="width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="height: 2rem; width: 4px; background-color: var(--color-primary);"></div>
+                        <h2 style="font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700;">Contractor Classification
+                        </h2>
+                    </div>
+                    <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1rem;">
+                        We are proud to hold a classified contractor status, enabling us to bid on and execute major
+                        governmental and private projects. This classification reflects our technical capability,
+                        financial stability, and project history.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <button class="btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">download</span>
+                            <span>Download PDF</span>
+                        </button>
+                        <button class="btn-secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">visibility</span>
+                            <span>View Full Details</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Separator -->
+            <div style="height: 1px; width: 100%; background-color: var(--color-border);"></div>
+
+            <!-- Item 4: Text Left, Image Right -->
+            <div class="cert-row-reverse"
+                style="display: flex; flex-direction: column; gap: 2rem; align-items: center; width: 100%;">
+                <!-- Image Section -->
+                <div class="cert-image" style="width: 100%;">
+                    <div
+                        style="position: relative; aspect-ratio: 4/3; width: 100%; overflow: hidden; border-radius: 1rem; border: 1px solid var(--color-border); background-color: var(--color-surface); box-shadow: var(--shadow-lg);">
+                        <div
+                            style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-alt);">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 4rem; color: var(--color-text-muted); opacity: 0.3;">receipt_long</span>
+                        </div>
+                        <img alt="VAT Registration Certificate"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEIfYvMOTG8UvMr4DaEmUCl2KRgdEFmRDKXn_zwk0yYo6hu6gBx24dEsa-HoarLjyimbY8Nr-xsMF-cdRSsRegCm9r-U5KCUN5gjDcTxBBhF12lGfAH76LTfwcf2X48pHdo2AOFRNAW9MiGQwAO7LbtQ3KXJgBEUZZs9KF2pc577IRWDBzFLzbp3NIRPhYPbC2G4idWo44gYLONnR07JhTqpKCzod-OAdytTNHf9ns4kczvJzYKCuB-Pt5RI2vdRpV1w2ChZHAksY"
+                            style="position: relative; z-index: 10; height: 100%; width: 100%; object-fit: cover; opacity: 0.9;" />
+                        <div
+                            style="position: absolute; bottom: 1rem; left: 1rem; z-index: 20; border-radius: 9999px; background-color: var(--color-surface); padding: 0.5rem; box-shadow: var(--shadow-md);">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Section -->
+                <div class="cert-text" style="width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="height: 2rem; width: 4px; background-color: var(--color-primary);"></div>
+                        <h2 style="font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700;">VAT & Zakat Certificate
+                        </h2>
+                    </div>
+                    <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1rem;">
+                        Our VAT and Zakat registration confirms our compliance with the Zakat, Tax and Customs Authority
+                        (ZATCA). We maintain rigorous financial transparency and adherence to all fiscal regulations
+                        within the Kingdom.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <button class="btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">download</span>
+                            <span>Download PDF</span>
+                        </button>
+                        <button class="btn-secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">visibility</span>
+                            <span>View Full Details</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Item 5: Image Left, Text Right -->
+            <div class="cert-row"
+                style="display: flex; flex-direction: column; gap: 2rem; align-items: center; width: 100%;">
+                <!-- Image Section -->
+                <div class="cert-image" style="width: 100%;">
+                    <div
+                        style="position: relative; aspect-ratio: 4/3; width: 100%; overflow: hidden; border-radius: 1rem; border: 1px solid var(--color-border); background-color: var(--color-surface); box-shadow: var(--shadow-lg);">
+                        <div
+                            style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-color: var(--color-bg-alt);">
+                            <span class="material-symbols-outlined"
+                                style="font-size: 4rem; color: var(--color-text-muted); opacity: 0.3;">policy</span>
+                        </div>
+                        <img alt="ISO 9001 Certification"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBwwrkV-ASHl-hCoIUBCYcUlDb_L6OcLzNj59w0sgLE_o8UlE_KwKzjnw72B-BLMT6sfjLKuc6kFq9V86ICtbLB0xSLnrVHHZ85SX9KDSyUW2jL8bbLWi4yT-VY33S_ECsesXZnZlGrsJafwQ_L-8wMg71xgR3LxAalUElxKsqpMQL4jiY2k6XQSqQ9ydjSpZOljG4P5uvTQZNANjmWXBhDb75HeGlrhPZ2JryQHmU7xb-Ki48vR_N_AXiEmOT3jEBHiHjzMtYVQyI"
+                            style="position: relative; z-index: 10; height: 100%; width: 100%; object-fit: cover; opacity: 0.9;" />
+                        <div
+                            style="position: absolute; bottom: 1rem; right: 1rem; z-index: 20; border-radius: 9999px; background-color: var(--color-surface); padding: 0.5rem; box-shadow: var(--shadow-md);">
+                            <span class="material-symbols-outlined text-primary">verified</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Text Section -->
+                <div class="cert-text" style="width: 100%;">
+                    <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 1rem;">
+                        <div style="height: 2rem; width: 4px; background-color: var(--color-primary);"></div>
+                        <h2 style="font-size: clamp(1.5rem, 3vw, 1.875rem); font-weight: 700;">ISO 9001:2015
+                            Certification</h2>
+                    </div>
+                    <p style="line-height: 1.75; color: var(--color-text-muted); margin-bottom: 1rem;">
+                        YASMA is committed to maintaining the highest standards of quality management. Our ISO 9001:2015
+                        certification demonstrates our dedication to consistent service quality, customer satisfaction,
+                        and continuous improvement.
+                    </p>
+                    <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <button class="btn-primary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">download</span>
+                            <span>Download PDF</span>
+                        </button>
+                        <button class="btn-secondary" style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="material-symbols-outlined" style="font-size: 1.25rem;">visibility</span>
+                            <span>View Full Details</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content" style="padding: 3rem var(--spacing-md); text-align: center;">
+            <div
+                style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; padding-bottom: 1rem;">
+                <span class="material-symbols-outlined text-primary" style="font-size: 2rem;">engineering</span>
+                <span style="font-size: 1.25rem; font-weight: 700; color: white;">YASMA</span>
+            </div>
+            <div
+                style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 2rem; margin-bottom: 1.5rem;">
+                <a class="footer-link" href="#">Privacy Policy</a>
+                <a class="footer-link" href="#">Terms of Service</a>
+                <a class="footer-link" href="#">Careers</a>
+                <a class="footer-link" href="#">Contact Us</a>
+            </div>
+            <div style="display: flex; justify-content: center; gap: 1.5rem; padding: 0.5rem 0 1rem;">
+                <a class="footer-link" href="#"><span class="material-symbols-outlined">work</span></a>
+                <a class="footer-link" href="#"><span class="material-symbols-outlined">flutter_dash</span></a>
+                <a class="footer-link" href="#"><span class="material-symbols-outlined">photo_camera</span></a>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <p style="color: #6B7280; font-size: 0.875rem;">Riyadh, Saudi Arabia</p>
+                <p style="color: #6B7280; font-size: 0.875rem;">© 2024 YASMA For Contracting Co. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script defer src="js/transitions.js"></script>
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>

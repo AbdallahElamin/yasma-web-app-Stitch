@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>YASMA For Contracting Co. - Contact Us</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols_Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+  <!-- Stylesheet -->
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header Navigation -->
+  <header class="header-nav">
+    <div class="nav-container">
+      <!-- Logo -->
+      <div class="nav-logo">
+        <div class="logo-icon">
+          <span class="material-symbols-outlined">engineering</span>
+        </div>
+        <div class="logo-text">
+          <h1>YASMA</h1>
+          <span>Contracting Co.</span>
+        </div>
+      </div>
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu">
+        <a class="nav-link" href="Landing_Page.html">Home</a>
+        <a class="nav-link" href="About_Us.html">About Us</a>
+        <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+        <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+        <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+      </nav>
+      <!-- Action Buttons -->
+      <div class="nav-actions">
+        <button aria-label="Toggle theme" class="btn-icon" id="theme-toggle">
+          <span class="material-symbols-outlined">light_mode</span>
+        </button>
+        <button class="btn-lang" id="lang-toggle">EN</button>
+        <button class="btn-primary">Get Quote</button>
+      </div>
+      <!-- Mobile Menu Button -->
+      <button class="btn-mobile-menu" id="mobile-menu-toggle">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a class="nav-link" href="Landing_Page.html">Home</a>
+      <a class="nav-link" href="About_Us.html">About Us</a>
+      <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+      <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+      <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+    </div>
+    <div class="mobile-menu-actions">
+      <button aria-label="Toggle theme" class="btn-icon" onclick="document.getElementById('theme-toggle').click()">
+        <span class="material-symbols-outlined">light_mode</span>
+      </button>
+      <button class="btn-lang" onclick="document.getElementById('lang-toggle').click()">EN</button>
+    </div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section">
+      <div class="container">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <h1
+            style="font-size: clamp(2.5rem, 5vw, 3.5rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.01em;">
+            Get in Touch</h1>
+          <p style="max-width: 48rem; font-size: 1.125rem; color: var(--color-text-muted);">Have a project in mind? We'd
+            love to hear from you. Send us a message or visit our main office in Riyadh.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Content Grid -->
+    <section style="padding: 0 var(--spacing-md) 5rem;">
+      <div class="container">
+        <div style="display: grid; gap: 2rem;">
+          <style>
+            @media (min-width: 1024px) {
+              .contact-grid {
+                grid-template-columns: 2fr 1fr;
+              }
+            }
+          </style>
+          <div class="contact-grid" style="display: grid; gap: 2rem;">
+            <!-- Left Side: Contact Form -->
+            <div>
+              <div
+                style="display: flex; flex-direction: column; border-radius: 0.75rem; background-color: var(--color-surface); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--color-border);">
+                <style>
+                  @media (min-width: 1024px) {
+                    .contact-form-padding {
+                      padding: 2.5rem;
+                    }
+                  }
+                </style>
+                <div class="contact-form-padding">
+                  <h3 style="margin-bottom: 2rem; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;">Send a
+                    Message</h3>
+                  <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <!-- Name & Email Row -->
+                    <div style="display: grid; gap: 1.5rem;">
+                      <style>
+                        @media (min-width: 768px) {
+                          .form-row {
+                            grid-template-columns: repeat(2, 1fr);
+                          }
+                        }
+                      </style>
+                      <div class="form-row" style="display: grid; gap: 1.5rem;">
+                        <label class="form-group">
+                          <span class="form-label">Full Name</span>
+                          <input class="form-input" placeholder="Enter your full name" type="text" />
+                        </label>
+                        <label class="form-group">
+                          <span class="form-label">Email Address</span>
+                          <input class="form-input" placeholder="name@company.com" type="email" />
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Subject -->
+                    <label class="form-group">
+                      <span class="form-label">Subject</span>
+                      <input class="form-input" placeholder="Project inquiry, Partnership, etc." type="text" />
+                    </label>
+                    <!-- Message -->
+                    <label class="form-group">
+                      <span class="form-label">Message</span>
+                      <textarea class="form-textarea"
+                        placeholder="Tell us about your project requirements..."></textarea>
+                    </label>
+                    <!-- Submit Button -->
+                    <div style="margin-top: 0.5rem;">
+                      <button class="btn-primary btn-large" style="width: 100%;" type="button">
+                        Send Message
+                      </button>
+                      <style>
+                        @media (min-width: 768px) {
+                          .submit-btn {
+                            width: auto;
+                          }
+                        }
+                      </style>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side: Contact Details -->
+            <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <!-- Contact Info Card -->
+              <div
+                style="display: flex; flex-direction: column; border-radius: 0.75rem; background-color: var(--color-surface); padding: 1.5rem; box-shadow: var(--shadow-sm); border: 1px solid var(--color-border);">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem; font-weight: 700; letter-spacing: -0.01em;">
+                  Contact Information</h3>
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                  <!-- Address -->
+                  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div
+                      style="display: flex; width: 2.5rem; height: 2.5rem; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 9999px; background-color: var(--color-primary-light); color: var(--color-primary);">
+                      <span class="material-symbols-outlined">location_on</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                      <p style="font-size: 0.875rem; font-weight: 700;">Our Location</p>
+                      <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+                        Riyadh, Al Mahdiyah<br />
+                        Kingdom of Saudi Arabia
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Phone -->
+                  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div
+                      style="display: flex; width: 2.5rem; height: 2.5rem; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 9999px; background-color: var(--color-primary-light); color: var(--color-primary);">
+                      <span class="material-symbols-outlined">call</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                      <p style="font-size: 0.875rem; font-weight: 700;">Phone Numbers</p>
+                      <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+                        <a class="footer-link" href="tel:+966110000000">+966 11 000 0000</a><br />
+                        <a class="footer-link" href="tel:+966500000000">+966 50 000 0000</a>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Email -->
+                  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div
+                      style="display: flex; width: 2.5rem; height: 2.5rem; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 9999px; background-color: var(--color-primary-light); color: var(--color-primary);">
+                      <span class="material-symbols-outlined">mail</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                      <p style="font-size: 0.875rem; font-weight: 700;">Email Address</p>
+                      <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+                        <a class="footer-link" href="mailto:info@yasmaksa.com">info@yasmaksa.com</a>
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Hours -->
+                  <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                    <div
+                      style="display: flex; width: 2.5rem; height: 2.5rem; flex-shrink: 0; align-items: center; justify-content: center; border-radius: 9999px; background-color: var(--color-primary-light); color: var(--color-primary);">
+                      <span class="material-symbols-outlined">schedule</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column;">
+                      <p style="font-size: 0.875rem; font-weight: 700;">Business Hours</p>
+                      <p style="font-size: 0.875rem; line-height: 1.6; color: var(--color-text-muted);">
+                        Sunday - Thursday: 8:00 AM - 5:00 PM<br />
+                        Friday - Saturday: Closed
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Map Placeholder -->
+              <div
+                style="overflow: hidden; border-radius: 0.75rem; border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); background-color: var(--color-surface); height: 16rem; position: relative;">
+                <img alt="Map showing location in Riyadh, Saudi Arabia"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_zetfEqR2A6LUEoqnNjTGCPi8gXCFjofbF_tmRoQI5AgI15zazlrulLdWixnJoqIaW2Sdh_YIbw_ZGtXmpfyft0K5_zrtqHqFCVYancMojyTafJvLUUJtTBy0oGWNCdnusRqS6NrdYEbsQhNp4kJ2BhjUPl2c4doTKac8ENphBIZs9QDf4pMU-QDARnqaDXubAhG4VWMiAhTyfQ3YvAARdLgvO0GnxbThy8D4vDIFwsJzEWDv0uWlEaCkiIuDfU7xm-ARM-0SWH8"
+                  style="height: 100%; width: 100%; object-fit: cover; transition: transform 0.5s; opacity: 0.8;" />
+                <div
+                  style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; background-color: rgba(0,0,0,0.1); transition: background-color 0.3s;">
+                  <a href="#"
+                    style="display: flex; align-items: center; gap: 0.5rem; border-radius: 9999px; background-color: white; padding: 0.5rem 1rem; font-size: 0.875rem; font-weight: 700; color: var(--color-text-main-light); box-shadow: var(--shadow-lg); text-decoration: none; transition: all 0.3s;">
+                    <span class="material-symbols-outlined" style="font-size: 1.125rem;">map</span>
+                    View on Google Maps
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" style="margin-top: 0;">
+    <div class="footer-content" style="padding: 3rem var(--spacing-md);">
+      <div style="display: flex; flex-direction: column; justify-content: space-between; gap: 2rem;">
+        <style>
+          @media (min-width: 768px) {
+            .footer-flex {
+              flex-direction: row;
+              align-items: center;
+            }
+          }
+        </style>
+        <div class="footer-flex"
+          style="display: flex; flex-direction: column; justify-content: space-between; gap: 2rem;">
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <h2 style="font-size: 1.125rem; font-weight: 700; color: white;">YASMA For Contracting Co.</h2>
+            <p style="font-size: 0.875rem; color: #9CA3AF;">Building the future of Saudi Arabia with excellence and
+              integrity.</p>
+          </div>
+          <div style="display: flex; gap: 2rem; font-size: 0.875rem; color: #9CA3AF;">
+            <a class="footer-link" href="#">Privacy Policy</a>
+            <a class="footer-link" href="#">Terms of Service</a>
+            <span style="opacity: 0.5;">© 2024 YASMA. All rights reserved.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script defer src="js/transitions.js"></script>
+  <script defer src="js/main.js"></script>
+</body>
+
+</html>
