@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Theme Toggle Test - YASMA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .test-container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .test-section {
+            margin: 2rem 0;
+            padding: 1rem;
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            background-color: var(--color-surface);
+        }
+        .button-demo {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            margin: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Theme Toggle Consistency Test</h1>
+        <p>This page demonstrates that the theme toggle buttons work consistently across desktop and mobile versions.</p>
+        
+        <div class="test-section">
+            <h2>Desktop Theme Toggle</h2>
+            <div class="button-demo">
+                <button aria-label="Toggle theme" class="btn-icon" id="theme-toggle">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+                <span>← Click this button to toggle theme</span>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Mobile Theme Toggle (from mobile menu)</h2>
+            <div class="button-demo mobile-menu-actions">
+                <button aria-label="Toggle theme" class="btn-icon">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+                <span>← This button should show the same icon and toggle theme</span>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Current Theme Status</h2>
+            <p>Current theme: <strong id="current-theme">light</strong></p>
+            <p>Both buttons should show the same icon and change together when clicked.</p>
+        </div>
+        
+        <div class="test-section">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Click either theme toggle button</li>
+                <li>Verify that both buttons change their icons simultaneously</li>
+                <li>Verify that the theme actually changes (background, text colors, etc.)</li>
+                <li>Refresh the page and verify the theme preference is saved</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Update the current theme display
+        function updateThemeDisplay() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            document.getElementById('current-theme').textContent = currentTheme;
+        }
+        
+        // Update display on page load
+        updateThemeDisplay();
+        
+        // Listen for theme changes
+        const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.type === 'attributes' && mutation.attributeName === 'data-theme') {
+                    updateThemeDisplay();
+                }
+            });
+        });
+        
+        observer.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['data-theme']
+        });
+    </script>
+</body>
+</html>

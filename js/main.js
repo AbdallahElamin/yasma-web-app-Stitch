@@ -1,6 +1,6 @@
 // ===================================
 // YASMA Contracting Co. - Main JavaScript
-// Interactive functionality for theme, language, and mobile menu
+// Interactive functionality for theme and mobile menu
 // ===================================
 
 (function() {
@@ -28,91 +28,51 @@
     });
   }
   
-  function updateThemeIcon(theme) {
-    if (!themeToggle) return;
-    
-    const icon = themeToggle.querySelector('.material-symbols-outlined');
-    if (icon) {
-      icon.textContent = theme === 'light' ? 'light_mode' : 'dark_mode';
-    }
-  }
-
-  // ===================================
-  // LANGUAGE TOGGLE
-  // ===================================
-  const langToggle = document.getElementById('lang-toggle');
-  
-  // Get saved language or default to 'en'
-  const savedLang = localStorage.getItem('yasma-lang') || 'en';
-  setLanguage(savedLang);
-  
-  if (langToggle) {
-    langToggle.addEventListener('click', function() {
-      const currentLang = html.getAttribute('lang') || 'en';
-      const newLang = currentLang === 'en' ? 'ar' : 'en';
+  // Also add event listeners to mobile theme toggle buttons
+  const mobileThemeButtons = document.querySelectorAll('.mobile-menu-actions .btn-icon[aria-label="Toggle theme"]');
+  mobileThemeButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const currentTheme = html.getAttribute('data-theme');
+      const newTheme = currentTheme === 'light' ? 'dark' : 'light';
       
-      setLanguage(newLang);
-      localStorage.setItem('yasma-lang', newLang);
-    });
-  }
-  
-  function setLanguage(lang) {
-    html.setAttribute('lang', lang);
-    html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-    
-    if (langToggle) {
-      langToggle.textContent = lang === 'en' ? 'EN' : 'AR';
-    }
-    
-    // Translate navigation and key elements
-    translatePage(lang);
-  }
-  
-  function translatePage(lang) {
-    const translations = {
-      en: {
-        'Home': 'Home',
-        'About Us': 'About Us',
-        'Our Projects': 'Our Projects',
-        'Certificates': 'Certificates',
-        'Contact Us': 'Contact Us',
-        'Get Quote': 'Get Quote'
-      },
-      ar: {
-        'Home': 'الرئيسية',
-        'About Us': 'من نحن',
-        'Our Projects': 'مشاريعنا',
-        'Certificates': 'الشهادات',
-        'Contact Us': 'اتصل بنا',
-        'Get Quote': 'احصل على عرض'
-      }
-    };
-    
-    // Translate navigation links
-    const navLinks = document.querySelectorAll('.nav-link, .mobile-menu-links .nav-link');
-    navLinks.forEach(link => {
-      const text = link.textContent.trim();
-      if (translations[lang][text]) {
-        link.textContent = translations[lang][text];
-      } else {
-        // Match against English keys
-        for (let key in translations.en) {
-          if (translations.en[key] === text || translations.ar[key] === text) {
-            link.textContent = translations[lang][key];
-            break;
+      html.setAttribute('data-theme', newTheme);
+      localStorage.setItem('yasma-theme', newTheme);
+      updateThemeIcon(newTheme);
+      
+      // Close mobile menu after theme toggle (better UX)
+      if (mobileMenu && mobileMenu.classList.contains('active')) {
+        mobileMenu.classList.remove('active');
+        if (mobileMenuToggle) {
+          mobileMenuToggle.setAttribute('aria-expanded', 'false');
+          const toggleIcon = mobileMenuToggle.querySelector('.material-symbols-outlined');
+          if (toggleIcon) {
+            toggleIcon.textContent = 'menu';
           }
         }
       }
     });
+  });
+  
+  function updateThemeIcon(theme) {
+    // Update main theme toggle button
+    if (themeToggle) {
+      const mainIcon = themeToggle.querySelector('.material-symbols-outlined');
+      if (mainIcon) {
+        mainIcon.textContent = theme === 'light' ? 'light_mode' : 'dark_mode';
+      }
+    }
     
-    // Translate buttons
-    const getQuoteButtons = document.querySelectorAll('.btn-primary');
-    getQuoteButtons.forEach(btn => {
-      if (btn.textContent.trim() === 'Get Quote' || btn.textContent.trim() === 'احصل على عرض') {
-        btn.textContent = translations[lang]['Get Quote'];
+    // Update mobile menu theme toggle buttons
+    const mobileThemeButtons = document.querySelectorAll('.mobile-menu-actions .btn-icon[aria-label="Toggle theme"]');
+    mobileThemeButtons.forEach(button => {
+      const mobileIcon = button.querySelector('.material-symbols-outlined');
+      if (mobileIcon) {
+        mobileIcon.textContent = theme === 'light' ? 'light_mode' : 'dark_mode';
       }
     });
   }
+
+
 
   // ===================================
   // MOBILE MENU
@@ -122,7 +82,11 @@
   
   if (mobileMenuToggle && mobileMenu) {
     mobileMenuToggle.addEventListener('click', function() {
+      const isActive = mobileMenu.classList.contains('active');
       mobileMenu.classList.toggle('active');
+      
+      // Update ARIA attributes
+      mobileMenuToggle.setAttribute('aria-expanded', !isActive);
       
       // Update icon
       const icon = mobileMenuToggle.querySelector('.material-symbols-outlined');
@@ -135,6 +99,7 @@
     document.addEventListener('click', function(e) {
       if (!mobileMenuToggle.contains(e.target) && !mobileMenu.contains(e.target)) {
         mobileMenu.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
         const icon = mobileMenuToggle.querySelector('.material-symbols-outlined');
         if (icon) {
           icon.textContent = 'menu';
@@ -147,6 +112,7 @@
     mobileMenuLinks.forEach(link => {
       link.addEventListener('click', function() {
         mobileMenu.classList.remove('active');
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
         const icon = mobileMenuToggle.querySelector('.material-symbols-outlined');
         if (icon) {
           icon.textContent = 'menu';
@@ -159,7 +125,7 @@
   // ACTIVE NAVIGATION STATE
   // ===================================
   function setActiveNavLink() {
-    const currentPage = window.location.pathname.split('/').pop() || 'Landing_Page.html';
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
     const navLinks = document.querySelectorAll('.nav-link');
     
     navLinks.forEach(link => {
@@ -167,8 +133,7 @@
       
       const linkHref = link.getAttribute('href');
       if (linkHref === currentPage || 
-          (currentPage === '' && linkHref === 'Landing_Page.html') ||
-          (currentPage === 'index.html' && linkHref === 'Landing_Page.html')) {
+          (currentPage === '' && linkHref === 'index.html')) {
         link.classList.add('nav-link-active');
       }
     });
