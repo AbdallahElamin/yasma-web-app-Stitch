@@ -33,12 +33,14 @@ The modernized architecture will maintain the same structure while optimizing:
 - Inconsistent mobile menu behavior across pages
 - Language toggle button present but not needed
 - Minor styling variations between pages
+- Inconsistent or missing hero image implementation across pages
 
 **Design Solution:**
 - Standardized header structure with consistent mobile menu implementation
 - Removal of language toggle functionality
 - Unified navigation active state management
 - Consistent responsive behavior across all breakpoints
+- Standardized hero image implementation using images/background/67.jpg across all pages
 
 #### 2. Responsive Grid System
 **Current Issues:**
@@ -192,6 +194,10 @@ The modernized architecture will maintain the same structure while optimizing:
 ### Property 8: Button Styling Uniformity
 *For any* button element across all pages, the styling, hover effects, and visual treatment should be identical
 **Validates: Requirements 1.3, 5.3**
+
+### Property 9: Hero Image Consistency
+*For any* page in the website, the hero section should display the same background image (images/background/67.jpg) with consistent positioning and responsive behavior
+**Validates: Requirements 8.1, 8.2, 8.3**
 
 ## Error Handling
 

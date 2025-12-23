@@ -155,6 +155,16 @@ This implementation plan converts the website modernization design into actionab
   - **Property 3: Theme Application Completeness**
   - **Validates: Requirements 7.3**
 
+- [x] 7.5 Standardize hero image across all pages
+  - Implement consistent hero image (images/background/67.jpg) across all pages
+  - Ensure proper responsive scaling and positioning
+  - Add fallback styling for image loading failures
+  - _Requirements: 8.1, 8.2, 8.3, 8.4_
+
+- [x] 7.6 Write property test for hero image consistency
+  - **Property 9: Hero Image Consistency**
+  - **Validates: Requirements 8.1, 8.2, 8.3**
+
 - [ ] 8. Clean up and optimize code
 - [ ] 8.1 Remove inline styles and consolidate CSS
   - Move all inline styles to shared CSS classes

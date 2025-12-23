@@ -106,6 +106,18 @@ This document outlines the requirements for modernizing the YASMA Contracting Co
 
 ### Requirement 8
 
+**User Story:** As a website visitor, I want consistent hero imagery across all pages, so that I experience unified visual branding and professional presentation throughout the site.
+
+#### Acceptance Criteria
+
+1. WHEN a user visits any page, THE Website SHALL display the same hero background image (images/background/67.jpg) in the header section
+2. WHEN a user navigates between pages, THE Website SHALL maintain consistent hero image positioning and scaling across all viewport sizes
+3. WHEN a user views the hero section on mobile devices, THE Website SHALL ensure the hero image displays appropriately without cropping important visual elements
+4. WHEN a user encounters the hero image, THE Website SHALL apply consistent overlay effects and text positioning across all pages
+5. WHEN the hero image loads, THE Website SHALL implement proper fallback styling in case the image fails to load
+
+### Requirement 9
+
 **User Story:** As a website performance monitor, I want optimized CSS and JavaScript delivery, so that the website loads quickly and efficiently for all users.
 
 #### Acceptance Criteria
