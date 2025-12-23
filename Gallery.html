@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Project Gallery - YASMA Contracting Co.</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">engineering</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">YASMA</span>
+                    <span>Contracting Co.</span>
+                </div>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="About_Us.html">About Us</a>
+                <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+                <a class="nav-link" href="Services.html">Services</a>
+                <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+                <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+            </nav>
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button aria-label="Toggle theme" class="btn-icon" id="theme-toggle">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+                <button type="button" class="btn-primary">Get Quote</button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="btn-mobile-menu" id="mobile-menu-toggle" aria-label="Toggle mobile menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" role="navigation">
+        <div class="mobile-menu-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="About_Us.html">About Us</a>
+            <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+            <a class="nav-link" href="Services.html">Services</a>
+            <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+        </div>
+        <div class="mobile-menu-actions">
+            <button aria-label="Toggle theme" class="btn-icon">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Breadcrumbs Section -->
+        <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="index.html" class="breadcrumb-link">Home</a>
+                    <span class="material-symbols-outlined" style="font-size: 1rem;">chevron_right</span>
+                    <a href="Our_Projects.html" class="breadcrumb-link" id="breadcrumb-parent-link">Projects</a>
+                    <span class="material-symbols-outlined" style="font-size: 1rem;">chevron_right</span>
+                    <span class="text-primary" id="breadcrumb-current-item">Project</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Hero Section -->
+        <section class="section" style="padding-top: 1rem;">
+            <div class="container">
+                <div style="margin-bottom: 2rem;">
+                    <a href="Our_Projects.html" id="back-link"
+                        style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.875rem; font-weight: 600; color: var(--color-text-muted); text-decoration: none; transition: color 0.15s;">
+                        <span class="material-symbols-outlined" style="font-size: 1.25rem;">arrow_back</span>
+                        <span id="back-link-text">Back to Projects</span>
+                    </a>
+                </div>
+
+                <div style="display: grid; gap: 2rem;">
+                    <!-- Project Header -->
+                    <div>
+                        <div
+                            style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
+                            <span id="project-badge" class="project-card-badge"
+                                style="position: static; transform: none;">Commercial</span>
+                            <div id="project-duration-container"
+                                style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-text-muted);">
+                                <span class="material-symbols-outlined" style="font-size: 1.25rem;">schedule</span>
+                                <span id="project-duration" style="font-size: 0.875rem; font-weight: 600;">6
+                                    Months</span>
+                            </div>
+                        </div>
+                        <h1 class="page-title" id="project-title"
+                            style="margin-bottom: 1rem; color: var(--color-text-main);">Project Title</h1>
+                        <div id="project-location-container" class="project-card-location"
+                            style="font-size: 1rem; margin-bottom: 1.5rem;">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <span id="project-location">Location</span>
+                        </div>
+                        <p id="project-description"
+                            style="font-size: 1.125rem; line-height: 1.7; color: var(--color-text-muted); max-width: 900px;">
+                            Project description will appear here.
+                        </p>
+                    </div>
+
+                    <!-- Image Gallery -->
+                    <div>
+                        <h2 class="section-title" id="gallery-section-title"
+                            style="margin-bottom: 2rem; color: var(--color-text-main);">Project
+                            Gallery</h2>
+                        <div id="gallery-grid" class="grid-projects"
+                            style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+                            <!-- Images will be loaded here by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 10000; align-items: center; justify-content: center;">
+        <button id="lightbox-close" aria-label="Close lightbox"
+            style="position: absolute; top: 2rem; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 10001;">
+            <span class="material-symbols-outlined" style="font-size: 2rem;">close</span>
+        </button>
+        <button id="lightbox-prev" aria-label="Previous image"
+            style="position: absolute; left: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+            <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_left</span>
+        </button>
+        <button id="lightbox-next" aria-label="Next image"
+            style="position: absolute; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+            <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_right</span>
+        </button>
+        <img id="lightbox-image" src="" alt="Full screen view"
+            style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 0.5rem;">
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content footer-simple">
+            <div class="footer-links-row">
+                <a class="footer-link" href="#">Privacy Policy</a>
+                <a class="footer-link" href="#">Terms of Service</a>
+                <a class="footer-link" href="#">Careers</a>
+            </div>
+            <div class="footer-social-row">
+                <a class="footer-link" href="#"><span
+                        class="material-symbols-outlined footer-social-icon">public</span></a>
+                <a class="footer-link" href="#"><span
+                        class="material-symbols-outlined footer-social-icon">work</span></a>
+                <a class="footer-link" href="#"><span
+                        class="material-symbols-outlined footer-social-icon">photo_camera</span></a>
+            </div>
+            <p style="color: #6B7280; font-size: 0.875rem;">© 2024 YASMA For Contracting Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script defer src="js/services-data.js"></script>
+    <script defer src="js/projects-data.js"></script>
+    <script defer src="js/transitions.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/gallery.js"></script>
+</body>
+
+</html>

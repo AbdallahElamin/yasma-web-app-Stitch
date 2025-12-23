@@ -1,0 +1,6 @@
+project-card-badge: Residential
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project10\Thumbnail.jpg"
+project-card-location: Dammam
+project-card-title: Al Orobah Project - 32 villas
+project-card-description:A premier 40-million-riyal residential community in Dammam consisting of 32 luxury villas, featuring contemporary stone-accented facades and high-end finishes delivered within a 12-month timeline.
+project-duration: 12 Months

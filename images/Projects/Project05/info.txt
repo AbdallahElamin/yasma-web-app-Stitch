@@ -1,0 +1,7 @@
+project-card-badge: Fuel Station
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project05\Thumbnail.jpg"
+project-card-location: Riyadh
+project-card-title: Al Ammariah Fuel Station
+project-card-description: An 11-million-riyal premium service station in Riyadh's Al Ammariah district, featuring high-capacity fueling bays and a bright, modern architectural canopy completed within nine months.
+project-duration: 9 Months
+

@@ -1,0 +1,3 @@
+service-work-card-title: Facade Finishing Works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Exterior\work02\Thumbnail.jpg"

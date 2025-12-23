@@ -1,0 +1,3 @@
+service-work-card-title: Furnishings with Decorative works 
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Interior\work06\Thumbnail.jpg"

@@ -1,0 +1,3 @@
+service-work-card-title: Roofing Works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Construction\work01\Thumbnail.jpg"

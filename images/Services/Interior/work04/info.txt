@@ -1,0 +1,3 @@
+service-work-card-title: Elevators Works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Interior\work04\Thumbnail.jpg"

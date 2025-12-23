@@ -1,0 +1,6 @@
+project-card-badge: Fuel Station
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project03\Thumbnail.jpg"
+project-card-location: Riyadh
+project-card-title: Qiddiya Fuel Station
+project-card-description: A 16-million-riyal ultra-modern fueling station in Riyadh, featuring a bold, aerodynamic canopy design that aligns with the visionary aesthetics of the Qiddiya development.
+project-duration: 6 Months

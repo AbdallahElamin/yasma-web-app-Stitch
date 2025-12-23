@@ -1,0 +1,6 @@
+project-card-badge: Residential
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project11\Thumbnail.jpg"
+project-card-location: Dammam
+project-card-title: Al Nahda Project - 10 villas
+project-card-description: A 12-million-riyal residential development in Dammam featuring 10 premium villas, characterized by clean geometric lines, high-quality stone cladding, and modern architectural detailing completed in 12 months.
+project-duration: 12 Months

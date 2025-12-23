@@ -1,0 +1,6 @@
+project-card-badge: Fuel Station
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project06\Thumbnail.jpg"
+project-card-location: Riyadh
+project-card-title: Aldrees Fuel Station
+project-card-description: A 4-million-riyal modern redevelopment of an Aldrees service station in Riyadh, featuring upgraded LED-illuminated branding, integrated retail kiosks, and high-capacity fueling bays completed in six months.
+project-duration: 6 Months

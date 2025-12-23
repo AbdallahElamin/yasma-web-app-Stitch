@@ -1,0 +1,3 @@
+service-work-card-title: Fire suppression and alarm systems, and pumps
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Fire Safety\work01\Thumbnail.jpg"

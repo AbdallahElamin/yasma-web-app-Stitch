@@ -1,0 +1,3 @@
+service-work-card-title: Stair finishing and Handrail works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Interior\work05\Thumbnail.jpg"

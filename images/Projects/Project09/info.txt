@@ -1,0 +1,8 @@
+project-card-badge: Residential
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project09\Thumbnail.jpg"
+project-card-location: Dammam
+project-card-title: Enwani Real Estate Project - 4 residential buildings
+project-card-description:A 27-million-riyal residential development in Dammam comprising four modern buildings, featuring contemporary minimalist facades and premium urban living spaces completed over a 12-month duration.
+project-duration: 12 Months
+
+

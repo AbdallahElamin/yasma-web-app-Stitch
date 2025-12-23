@@ -1,0 +1,3 @@
+service-work-card-title: excavation and replacement, surveying, fill and compaction works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Infrastructure\work01\Thumbnail.jpg"

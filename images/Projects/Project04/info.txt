@@ -1,0 +1,7 @@
+project-card-badge: Fuel Station
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project04\Thumbnail.jpg"
+project-card-location: Riyadh
+project-card-title: Irqah Fuel Station
+project-card-description: A 4.5-million-riyal modern service station in Riyadh’s Irqah district, featuring a streamlined architectural canopy and high-efficiency layout completed over an eight-month period.
+project-duration: 8 Months
+

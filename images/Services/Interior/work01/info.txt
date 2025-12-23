@@ -1,0 +1,3 @@
+service-work-card-title: Door and Window Works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\Interior\work01\Thumbnail.jpg"

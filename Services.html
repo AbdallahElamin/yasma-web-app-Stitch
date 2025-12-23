@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services - YASMA Contracting Co.</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+        rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/services.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Navigation -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <span class="material-symbols-outlined">engineering</span>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">YASMA</span>
+                    <span>Contracting Co.</span>
+                </div>
+            </div>
+            <!-- Desktop Navigation -->
+            <nav class="nav-menu" aria-label="Main navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="About_Us.html">About Us</a>
+                <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+                <a class="nav-link" href="Services.html">Services</a>
+                <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+                <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+            </nav>
+            <!-- Action Buttons -->
+            <div class="nav-actions">
+                <button aria-label="Toggle theme" class="btn-icon" id="theme-toggle">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+                <button type="button" class="btn-primary">Get Quote</button>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="btn-mobile-menu" id="mobile-menu-toggle" aria-label="Toggle mobile menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" role="navigation">
+        <div class="mobile-menu-links">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="About_Us.html">About Us</a>
+            <a class="nav-link" href="Our_Projects.html">Our Projects</a>
+            <a class="nav-link" href="Services.html">Services</a>
+            <a class="nav-link" href="Certificates_and_licenses.html">Certificates</a>
+            <a class="nav-link" href="Contact_Us.html">Contact Us</a>
+        </div>
+        <div class="mobile-menu-actions">
+            <button aria-label="Toggle theme" class="btn-icon">
+                <span class="material-symbols-outlined">light_mode</span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-header services-hero">
+            <div class="hero-header-overlay"></div>
+            <div class="hero-header-content">
+                <div class="container">
+                    <!-- Breadcrumbs -->
+                    <div class="breadcrumbs">
+                        <a href="index.html" class="breadcrumb-link">Home</a>
+                        <span class="material-symbols-outlined" style="font-size: 1rem;">chevron_right</span>
+                        <span class="text-primary">Services</span>
+                    </div>
+                    <h1 class="page-title">Our Expertise</h1>
+                    <p class="hero-description" style="max-width: 700px; margin: 0 auto;">
+                        Comprehensive construction and contracting solutions tailored to build the future of Saudi
+                        Arabia.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Section -->
+        <section class="section" style="padding-top: 2rem; padding-bottom: 1rem;">
+            <div class="container">
+                <!-- Services Filter -->
+                <div class="services-filter">
+                    <button class="filter-button active" data-category="all">All Services</button>
+                    <button class="filter-button" data-category="Construction">Construction</button>
+                    <button class="filter-button" data-category="Infrastructure">Infrastructure</button>
+                    <button class="filter-button" data-category="Exterior">Exterior</button>
+                    <button class="filter-button" data-category="Interior">Interior</button>
+                    <button class="filter-button" data-category="Fire Safety">Fire Safety</button>
+                    <button class="filter-button" data-category="MEP">MEP</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="section" style="padding-top: 1rem;">
+            <div class="container">
+                <div class="services-grid" id="services-grid">
+                    <!-- Service cards will be loaded here by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content footer-simple">
+            <div class="footer-links-row">
+                <a class="footer-link" href="#">Privacy Policy</a>
+                <a class="footer-link" href="#">Terms of Service</a>
+                <a class="footer-link" href="#">Careers</a>
+            </div>
+            <div class="footer-social-row">
+                <a class="footer-link" href="#"><span
+                        class="material-symbols-outlined footer-social-icon">public</span></a>
+                <a class="footer-link" href="#"><span
+                        class="material-symbols-outlined footer-social-icon">work</span></a>
+                <a class="footer-link" href="#"><span
+                        class="material-symbols-outlined footer-social-icon">photo_camera</span></a>
+            </div>
+            <p style="color: #6B7280; font-size: 0.875rem;">© 2024 YASMA For Contracting Co. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script defer src="js/services-data.js"></script>
+    <script defer src="js/transitions.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/services.js"></script>
+</body>
+
+</html>

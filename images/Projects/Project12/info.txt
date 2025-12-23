@@ -1,0 +1,6 @@
+project-card-badge: Residential
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project12\Thumbnail.jpg"
+project-card-location: Dammam
+project-card-title: 
+project-card-description: 
+project-duration: 12 Months

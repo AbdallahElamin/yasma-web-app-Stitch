@@ -1,0 +1,6 @@
+project-card-badge: Commercial
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project02\Thumbnail.jpg"
+project-card-location: Dammam
+project-card-title: Chambers Union Tower
+project-card-description: An architecturally significant tower in Dammam, this project involved the high-speed execution of premium commercial infrastructure for the GCC Chambers Union within a six-month timeframe.
+project-duration: 6 Months

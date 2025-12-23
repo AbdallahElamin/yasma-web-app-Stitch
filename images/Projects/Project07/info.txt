@@ -1,0 +1,8 @@
+project-card-badge: Fuel Station
+project-card-image: src="C:\Users\user\Documents\yasma-web-app(Stitch)\images\Projects\Project07\Thumbnail.jpg"
+project-card-location: Riyadh
+project-card-title: Rehabilitation of stations for Petroly Co.
+project-card-description:A comprehensive 12-million-riyal rehabilitation project for Petroly Co stations in Riyadh, delivering modernized fueling infrastructure and refreshed corporate branding within a swift six-month timeline.
+project-duration: 6 Months
+
+

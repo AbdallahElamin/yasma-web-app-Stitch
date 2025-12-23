@@ -1,0 +1,3 @@
+service-work-card-title: Plumbing and Air Conditioning Works
+service-work-card-description: ((Generate Yourself))
+service-work-card-image: src="\images\Services\MEP\work01\Thumbnail.jpg"
