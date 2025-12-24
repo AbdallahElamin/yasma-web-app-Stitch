@@ -98,6 +98,13 @@ This implementation plan converts the website modernization design into actionab
   - **Property 7: Touch Target Accessibility**
   - **Validates: Requirements 2.3, 7.4**
 
+- [x] 4.5 Fix mobile navigation z-index layering
+  - Increase mobile menu z-index to ensure it appears above all page content
+  - Ensure mobile menu uses proper positioning (fixed) relative to viewport
+  - Verify menu is not clipped by parent containers with overflow: hidden
+  - Test mobile menu visibility across all pages and screen sizes
+  - _Requirements: 2.3, 7.4_
+
 - [x] 5. Standardize semantic HTML structure
 - [x] 5.1 Convert all pages to semantic HTML
   - Replace div-based layouts with semantic elements (header, nav, main, section, footer)
