@@ -3,7 +3,7 @@
  * Feature: website-modernization, Property 9: Hero Image Consistency
  * Validates: Requirements 8.1, 8.2, 8.3
  * 
- * Tests that all pages display the same hero background image (images/background/67.jpg)
+ * Tests that all pages display the same hero background image (images/background/yasma hero 2.png)
  * with consistent positioning and responsive behavior across all viewport sizes.
  */
 
@@ -86,13 +86,13 @@ const normalizeImagePath = (imagePath) => {
 // Check if image path points to the expected hero image
 const isExpectedHeroImage = (imagePath) => {
     const normalized = normalizeImagePath(imagePath);
-    const expectedPath = 'images/background/67.jpg';
+    const expectedPath = 'images/background/yasma hero 2.png';
     return normalized === expectedPath;
 };
 
 describe('Hero Image Consistency Property Tests', () => {
     const htmlFiles = getHtmlFiles();
-    const expectedHeroImage = 'images/background/67.jpg';
+    const expectedHeroImage = 'images/background/yasma hero 2.png';
     
     test('Property 9: Hero Image Consistency - All pages should use the same hero image', () => {
         const results = [];
@@ -165,7 +165,7 @@ describe('Hero Image Consistency Property Tests', () => {
     });
     
     test('Property 9: Hero Image Consistency - All hero images should exist in the file system', () => {
-        const expectedImagePath = path.join('images', 'background', '67.jpg');
+        const expectedImagePath = path.join('images', 'background', 'yasma hero 2.png');
         
         expect(fs.existsSync(expectedImagePath)).toBe(true);
         
