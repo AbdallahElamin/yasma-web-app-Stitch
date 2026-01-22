@@ -98,7 +98,7 @@
             <div class="contact-form-container">
               <h2 style="margin-bottom: 2rem; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.01em;">Send a
                 Message</h2>
-              <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+              <form id="contactForm" style="display: flex; flex-direction: column; gap: 1.5rem;">
                 <!-- Name & Email Row -->
                 <div class="form-row">
                   <label class="form-group">
@@ -122,9 +122,21 @@
                 </label>
                 <!-- Submit Button -->
                 <div style="margin-top: 0.5rem;">
-                  <button class="btn-primary btn-large" style="width: 100%;" type="button">Send Message</button>
+                  <button class="btn-primary btn-large" style="width: 100%;" type="submit">Send Message</button>
                 </div>
               </form>
+              <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+              <script>
+                emailjs.init("YOUR_PUBLIC_KEY");
+
+                document.getElementById("contactForm").addEventListener("submit", function(e) {
+                  e.preventDefault();
+
+                  emailjs.sendForm("SERVICE_ID", "TEMPLATE_ID", this)
+                    .then(() => alert("Message sent successfully!"))
+                    .catch(() => alert("Failed to send message"));
+                });
+              </script>
             </div>
           </div>
 
