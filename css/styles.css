@@ -715,7 +715,7 @@ h6 {
     margin-bottom: var(--spacing-xl);
     font-size: var(--font-size-lg);
     line-height: var(--line-height-relaxed);
-    color: floralwhite;
+    color: var(--color-text-main);
 }
 
 @media (min-width: 481px) {
