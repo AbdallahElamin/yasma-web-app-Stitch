@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Responsive Grid & Layout Test - YASMA Contracting Co.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        /* Test styles for demonstration */
+        .test-card {
+            background-color: var(--color-surface);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            padding: var(--spacing-lg);
+            text-align: center;
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all var(--transition-fast);
+        }
+        
+        .test-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+        
+        .test-section {
+            margin-bottom: var(--spacing-3xl);
+            padding: var(--spacing-xl) 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .test-title {
+            font-size: var(--font-size-2xl);
+            font-weight: var(--font-weight-bold);
+            margin-bottom: var(--spacing-md);
+            color: var(--color-primary);
+        }
+        
+        .test-description {
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-xl);
+            font-size: var(--font-size-base);
+        }
+        
+        .breakpoint-indicator {
+            position: fixed;
+            top: var(--spacing-md);
+            right: var(--spacing-md);
+            background-color: var(--color-primary);
+            color: white;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--radius-md);
+            font-size: var(--font-size-sm);
+            font-weight: var(--font-weight-bold);
+            z-index: 1000;
+        }
+        
+        .container-demo {
+            background-color: var(--color-bg-alt);
+            border: 2px dashed var(--color-border);
+            margin-bottom: var(--spacing-lg);
+            position: relative;
+        }
+        
+        .container-demo::before {
+            content: attr(data-container);
+            position: absolute;
+            top: -1px;
+            left: var(--spacing-sm);
+            background-color: var(--color-bg);
+            padding: 0 var(--spacing-sm);
+            font-size: var(--font-size-xs);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Breakpoint Indicator -->
+    <div class="breakpoint-indicator">
+        <span class="mobile-only">Mobile (≤767px)</span>
+        <span class="tablet-only" style="display: none;">Tablet (768px-1023px)</span>
+        <span class="desktop-only" style="display: none;">Desktop (≥1024px)</span>
+    </div>
+
+    <!-- Header -->
+    <header class="header-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-icon">
+                    <img src="images/logo/yasma-logo.png" alt="YASMA Logo" />
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">YASMA</span>
+                    <span>Contracting Co.</span>
+                </div>
+            </a>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#" class="nav-link nav-link-active">Grid Test</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn-icon" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="material-symbols-outlined">light_mode</span>
+                </button>
+            </div>
+            <button class="btn-mobile-menu" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-bg">
+                <img src="images/background/67.jpg" alt="Construction background" />
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-inner">
+                    <h1 class="hero-title">Responsive Grid & Layout <span class="highlight">Test Suite</span></h1>
+                    <p class="hero-text">Testing mobile-first responsive grid patterns, container utilities, and touch-friendly spacing across all breakpoints.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Container Tests -->
+        <section class="section">
+            <div class="container">
+                <div class="test-section">
+                    <h2 class="test-title">Container Utilities Test</h2>
+                    <p class="test-description">Testing various container classes with max-width: 100% and overflow-x: hidden</p>
+                    
+                    <div class="container-demo container-base" data-container="container-base">
+                        <div class="test-card">Base Container - Responsive padding, overflow-x: hidden</div>
+                    </div>
+                    
+                    <div class="container-demo container-fluid" data-container="container-fluid">
+                        <div class="test-card">Fluid Container - Full width, no max-width constraint</div>
+                    </div>
+                    
+                    <div class="container-demo container-narrow" data-container="container-narrow">
+                        <div class="test-card">Narrow Container - 42rem max-width for content</div>
+                    </div>
+                    
+                    <div class="container-demo container-wide" data-container="container-wide">
+                        <div class="test-card">Wide Container - 90rem max-width for layouts</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Grid Pattern Tests -->
+        <section class="section">
+            <div class="container">
+                <div class="test-section">
+                    <h2 class="test-title">Mobile-First Grid Patterns</h2>
+                    <p class="test-description">All grids start as single column on mobile (≤767px), then adapt to 2+ columns on tablet (768px+) and desktop (1024px+)</p>
+                    
+                    <!-- 1 Column Grid -->
+                    <h3 class="section-subtitle">Single Column Grid</h3>
+                    <div class="grid grid-cols-1 gap-touch-md">
+                        <div class="test-card">Column 1</div>
+                        <div class="test-card">Column 2</div>
+                        <div class="test-card">Column 3</div>
+                    </div>
+                    
+                    <!-- 2 Column Grid -->
+                    <h3 class="section-subtitle">Two Column Grid</h3>
+                    <div class="grid grid-cols-2 gap-touch-lg">
+                        <div class="test-card">Card 1</div>
+                        <div class="test-card">Card 2</div>
+                        <div class="test-card">Card 3</div>
+                        <div class="test-card">Card 4</div>
+                    </div>
+                    
+                    <!-- 3 Column Grid -->
+                    <h3 class="section-subtitle">Three Column Grid</h3>
+                    <div class="grid grid-cols-3 gap-touch-lg">
+                        <div class="test-card">Item 1</div>
+                        <div class="test-card">Item 2</div>
+                        <div class="test-card">Item 3</div>
+                        <div class="test-card">Item 4</div>
+                        <div class="test-card">Item 5</div>
+                        <div class="test-card">Item 6</div>
+                    </div>
+                    
+                    <!-- 4 Column Grid -->
+                    <h3 class="section-subtitle">Four Column Grid</h3>
+                    <div class="grid grid-cols-4 gap-touch-xl">
+                        <div class="test-card">Box 1</div>
+                        <div class="test-card">Box 2</div>
+                        <div class="test-card">Box 3</div>
+                        <div class="test-card">Box 4</div>
+                        <div class="test-card">Box 5</div>
+                        <div class="test-card">Box 6</div>
+                        <div class="test-card">Box 7</div>
+                        <div class="test-card">Box 8</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Auto-Fit Grid Tests -->
+        <section class="section">
+            <div class="container">
+                <div class="test-section">
+                    <h2 class="test-title">Auto-Fit Grid Patterns</h2>
+                    <p class="test-description">Responsive grids that automatically adjust column count based on available space</p>
+                    
+                    <!-- Auto-fit Small -->
+                    <h3 class="section-subtitle">Auto-Fit Small (min 200px)</h3>
+                    <div class="grid grid-auto-fit-sm gap-touch-md">
+                        <div class="test-card">Auto 1</div>
+                        <div class="test-card">Auto 2</div>
+                        <div class="test-card">Auto 3</div>
+                        <div class="test-card">Auto 4</div>
+                        <div class="test-card">Auto 5</div>
+                    </div>
+                    
+                    <!-- Auto-fit Medium -->
+                    <h3 class="section-subtitle">Auto-Fit Medium (min 250px)</h3>
+                    <div class="grid grid-auto-fit-md gap-touch-lg">
+                        <div class="test-card">Responsive 1</div>
+                        <div class="test-card">Responsive 2</div>
+                        <div class="test-card">Responsive 3</div>
+                        <div class="test-card">Responsive 4</div>
+                    </div>
+                    
+                    <!-- Auto-fit Large -->
+                    <h3 class="section-subtitle">Auto-Fit Large (min 300px)</h3>
+                    <div class="grid grid-auto-fit-lg gap-touch-xl">
+                        <div class="test-card">Adaptive 1</div>
+                        <div class="test-card">Adaptive 2</div>
+                        <div class="test-card">Adaptive 3</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Flexbox Tests -->
+        <section class="section">
+            <div class="container">
+                <div class="test-section">
+                    <h2 class="test-title">Flexbox Layout Utilities</h2>
+                    <p class="test-description">Testing flexbox utilities with touch-friendly spacing and overflow control</p>
+                    
+                    <!-- Flex Row -->
+                    <h3 class="section-subtitle">Flex Row with Touch-Friendly Gaps</h3>
+                    <div class="flex flex-row flex-wrap gap-interactive-md">
+                        <div class="test-card flex-1">Flex Item 1</div>
+                        <div class="test-card flex-1">Flex Item 2</div>
+                        <div class="test-card flex-1">Flex Item 3</div>
+                    </div>
+                    
+                    <!-- Flex Column -->
+                    <h3 class="section-subtitle">Flex Column</h3>
+                    <div class="flex flex-col gap-touch-lg" style="height: 300px;">
+                        <div class="test-card flex-none">Header</div>
+                        <div class="test-card flex-1">Main Content (flex-1)</div>
+                        <div class="test-card flex-none">Footer</div>
+                    </div>
+                    
+                    <!-- Flex Alignment -->
+                    <h3 class="section-subtitle">Flex Alignment Options</h3>
+                    <div class="flex flex-row items-center justify-between gap-touch-md" style="height: 120px; background-color: var(--color-bg-alt); padding: var(--spacing-md); border-radius: var(--radius-md);">
+                        <div class="test-card flex-none">Start</div>
+                        <div class="test-card flex-none">Center</div>
+                        <div class="test-card flex-none">End</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Touch-Friendly Spacing Tests -->
+        <section class="section">
+            <div class="container">
+                <div class="test-section">
+                    <h2 class="test-title">Touch-Friendly Spacing</h2>
+                    <p class="test-description">Testing spacing utilities that ensure minimum touch target sizes (44px minimum)</p>
+                    
+                    <!-- Interactive Elements -->
+                    <h3 class="section-subtitle">Interactive Element Spacing</h3>
+                    <div class="flex flex-wrap gap-interactive-lg">
+                        <button class="btn-primary">Touch Button 1</button>
+                        <button class="btn-secondary">Touch Button 2</button>
+                        <button class="btn-primary">Touch Button 3</button>
+                        <button class="btn-secondary">Touch Button 4</button>
+                    </div>
+                    
+                    <!-- Touch-Friendly Grid -->
+                    <h3 class="section-subtitle">Touch-Friendly Grid Gaps</h3>
+                    <div class="grid grid-cols-2 tablet:grid-cols-3 desktop:grid-cols-4 gap-touch-xl">
+                        <div class="test-card" style="min-height: 44px;">Touch Target 1</div>
+                        <div class="test-card" style="min-height: 44px;">Touch Target 2</div>
+                        <div class="test-card" style="min-height: 44px;">Touch Target 3</div>
+                        <div class="test-card" style="min-height: 44px;">Touch Target 4</div>
+                        <div class="test-card" style="min-height: 44px;">Touch Target 5</div>
+                        <div class="test-card" style="min-height: 44px;">Touch Target 6</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Responsive Breakpoint Tests -->
+        <section class="section">
+            <div class="container">
+                <div class="test-section">
+                    <h2 class="test-title">Responsive Breakpoint Behavior</h2>
+                    <p class="test-description">Testing how layouts adapt across mobile (≤767px), tablet (768px-1023px), and desktop (≥1024px)</p>
+                    
+                    <!-- Responsive Grid -->
+                    <div class="grid grid-cols-1 tablet:grid-cols-2 desktop:grid-cols-4 gap-touch-lg">
+                        <div class="test-card">
+                            <div>
+                                <strong>Responsive Card 1</strong><br>
+                                <small>Mobile: 1 col<br>Tablet: 2 cols<br>Desktop: 4 cols</small>
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <div>
+                                <strong>Responsive Card 2</strong><br>
+                                <small>Adapts to screen size</small>
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <div>
+                                <strong>Responsive Card 3</strong><br>
+                                <small>Touch-friendly gaps</small>
+                            </div>
+                        </div>
+                        <div class="test-card">
+                            <div>
+                                <strong>Responsive Card 4</strong><br>
+                                <small>Overflow controlled</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-simple">
+                <p>&copy; 2024 YASMA Contracting Co. - Responsive Grid Test Suite</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Breakpoint indicator
+        function updateBreakpointIndicator() {
+            const mobile = document.querySelector('.mobile-only');
+            const tablet = document.querySelector('.tablet-only');
+            const desktop = document.querySelector('.desktop-only');
+            
+            const width = window.innerWidth;
+            
+            if (width <= 767) {
+                mobile.style.display = 'inline';
+                tablet.style.display = 'none';
+                desktop.style.display = 'none';
+            } else if (width <= 1023) {
+                mobile.style.display = 'none';
+                tablet.style.display = 'inline';
+                desktop.style.display = 'none';
+            } else {
+                mobile.style.display = 'none';
+                tablet.style.display = 'none';
+                desktop.style.display = 'inline';
+            }
+        }
+        
+        // Update on load and resize
+        updateBreakpointIndicator();
+        window.addEventListener('resize', updateBreakpointIndicator);
+    </script>
+</body>
+</html>
