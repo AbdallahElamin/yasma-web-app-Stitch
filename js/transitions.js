@@ -47,7 +47,9 @@
 
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
-                    navigateWithTransition(href);
+                    // Get the current href at click time (in case it was dynamically updated)
+                    const currentHref = link.getAttribute('href');
+                    navigateWithTransition(currentHref);
                 });
             }
         });

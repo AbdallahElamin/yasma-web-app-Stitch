@@ -85,8 +85,7 @@ const servicesData = [
         images: [
             "images/Services/Exterior/work01/1.jpg",
             "images/Services/Exterior/work01/2.jpg",
-            "images/Services/Exterior/work01/3.jpg",
-            "images/Services/Exterior/work01/4.jpg"
+            "images/Services/Exterior/work01/3.jpg"
         ]
     },
     {
@@ -98,8 +97,7 @@ const servicesData = [
         images: [
             "images/Services/Exterior/work02/1.jpg",
             "images/Services/Exterior/work02/2.jpg",
-            "images/Services/Exterior/work02/3.jpg",
-            "images/Services/Exterior/work02/4.jpg"
+            "images/Services/Exterior/work02/3.jpg"
         ]
     },
 
@@ -113,8 +111,7 @@ const servicesData = [
         images: [
             "images/Services/Fire Safety/work01/1.jpg",
             "images/Services/Fire Safety/work01/2.jpg",
-            "images/Services/Fire Safety/work01/3.jpg",
-            "images/Services/Fire Safety/work01/4.jpg"
+            "images/Services/Fire Safety/work01/3.jpg"
         ]
     },
 
@@ -128,8 +125,7 @@ const servicesData = [
         images: [
             "images/Services/Infrastructure/work01/1.jpg",
             "images/Services/Infrastructure/work01/2.jpg",
-            "images/Services/Infrastructure/work01/3.jpg",
-            "images/Services/Infrastructure/work01/4.jpg"
+            "images/Services/Infrastructure/work01/3.jpg"
         ]
     },
 
@@ -143,8 +139,7 @@ const servicesData = [
         images: [
             "images/Services/Interior/work01/1.jpg",
             "images/Services/Interior/work01/2.jpg",
-            "images/Services/Interior/work01/3.jpg",
-            "images/Services/Interior/work01/4.jpg"
+            "images/Services/Interior/work01/3.jpg"
         ]
     },
     {
@@ -165,8 +160,7 @@ const servicesData = [
         thumbnail: "images/Services/Interior/work03/Thumbnail.jpg",
         images: [
             "images/Services/Interior/work03/1.jpg",
-            "images/Services/Interior/work03/2.jpg",
-            "images/Services/Interior/work03/3.jpg"
+            "images/Services/Interior/work03/2.jpg"
         ]
     },
     {
@@ -188,8 +182,7 @@ const servicesData = [
         images: [
             "images/Services/Interior/work05/1.jpg",
             "images/Services/Interior/work05/2.jpg",
-            "images/Services/Interior/work05/3.jpg",
-            "images/Services/Interior/work05/4.jpg"
+            "images/Services/Interior/work05/3.jpg"
         ]
     },
     {
@@ -217,8 +210,7 @@ const servicesData = [
         images: [
             "images/Services/MEP/work01/1.jpg",
             "images/Services/MEP/work01/2.jpg",
-            "images/Services/MEP/work01/3.jpg",
-            "images/Services/MEP/work01/4.jpg"
+            "images/Services/MEP/work01/3.jpg"
         ]
     }
 ];

@@ -90,6 +90,10 @@
         const galleryTitle = document.getElementById('gallery-section-title');
         if (galleryTitle) galleryTitle.textContent = 'Project Gallery';
 
+        // Update hero title
+        const heroTitle = document.getElementById('hero-title');
+        if (heroTitle) heroTitle.textContent = 'Project Gallery';
+
         // Update details
         const titleEl = document.getElementById('project-title');
         if (titleEl) titleEl.textContent = project.title;
@@ -143,6 +147,10 @@
         // Update section title
         const galleryTitle = document.getElementById('gallery-section-title');
         if (galleryTitle) galleryTitle.textContent = 'Service Gallery';
+
+        // Update hero title
+        const heroTitle = document.getElementById('hero-title');
+        if (heroTitle) heroTitle.textContent = 'Service Gallery';
 
         // Update details
         const titleEl = document.getElementById('project-title');
