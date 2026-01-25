@@ -165,7 +165,7 @@ const PROJECTS_DATA = [
         location: 'Riyadh',
         title: 'AlMorabaa Hotel Project',
         description: 'A contemporary luxury residential development in Riyadh featuring a striking modern facade with textured plaster walls, warm natural stone accents, sleek horizontal louvers for shade and privacy, lush rooftop greenery, and integrated covered parking for premium comfort and sophisticated urban living.',
-        duration: '??? Months',
+        duration: '10 Months',
         thumbnail: 'images/Projects/Project12/Thumbnail.jpg',
         images: [
             'images/Projects/Project12/Thumbnail.jpg',
@@ -186,7 +186,7 @@ const PROJECTS_DATA = [
         location: 'Riyadh, Al-Wurud neighborhood',
         title: 'Al-Wurud villa project',
         description: 'A premium luxury villa under construction in the prestigious Al-Wurud neighborhood of Riyadh. Currently in the structural phase, the project features a spacious, well-planned layout with extensive reinforced concrete foundations, meticulously arranged column and beam reinforcement, and large floor plates designed for elegant modern living. The build emphasizes quality craftsmanship, generous room dimensions, and a prime location surrounded by established villas and greenery.',
-        duration: '??? Months',
+        duration: '7 Months',
         thumbnail: 'images/Projects/Project13/Thumbnail.jpg',
         images: [
             'images/Projects/Project13/Thumbnail.jpg',
@@ -206,7 +206,7 @@ const PROJECTS_DATA = [
         location: 'Riyadh',
         title: 'Transit Fuel Station Project',
         description: 'A modern fuel station development in Riyadh, currently in the advanced structural phase. The project features robust concrete block masonry construction using high-quality hollow and solid CMUs for durable, fire-resistant walls, spacious canopy-supported pump areas, integrated service building foundations, and strategic layout optimized for high-traffic accessibility, efficient vehicle flow, and future convenience retail integration. Emphasizing safety, longevity, and compliance with Saudi petroleum standards.',
-        duration: '??? Months',
+        duration: '6 Months',
         thumbnail: 'images/Projects/Project14/Thumbnail.jpg',
         images: [
             'images/Projects/Project14/Thumbnail.jpg',
@@ -221,7 +221,7 @@ const PROJECTS_DATA = [
         location: 'Riyadh, Tuwaiq',
         title: 'Aldrees Fuel Station Project (Riyadh)',
         description: 'Premium Aldrees fuel station development in Riyadh\'s Tuwaiq area. Featuring elegant modern-traditional facade with textured plaster, stepped architectural elements, large open canopy zone, and advanced on-site utilities including fire suppression systems. This ongoing project highlights durable construction, strategic layout for seamless fueling operations, and alignment with Aldrees\' commitment to quality petroleum retail infrastructure.',
-        duration: '??? Months',
+        duration: '7 Months',
         thumbnail: 'images/Projects/Project15/Thumbnail.jpg',
         images: [
             'images/Projects/Project15/Thumbnail.jpg',
@@ -236,7 +236,7 @@ const PROJECTS_DATA = [
         location: 'Riyadh, Al Qadisiyah neighborhood',
         title: 'Iktiraa Drive-Through Project',
         description: 'Modern drive-through commercial complex in Al Qadisiyah, Riyadh. Showcasing precise structural shell construction with large open service bays, premium plaster finishes, strategic layout for seamless drive-through operations, and quality materials from SIEFCO. The ongoing project is tailored for high-volume quick-service retail, combining functionality, aesthetics, and compliance with local commercial standards.',
-        duration: '??? Months',
+        duration: '5 Months',
         thumbnail: 'images/Projects/Project16/Thumbnail.jpg',
         images: [
             'images/Projects/Project16/Thumbnail.jpg',
@@ -256,7 +256,7 @@ const PROJECTS_DATA = [
         location: 'Dammam, Qatif',
         title: 'Petroly (Al Sadiq) Fuel Station Project',
         description: 'A state-of-the-art Petroly-branded fuel station under construction in the Al Sadiq area of Qatif, near Dammam. The project features a modern single-story service building with clean, minimalist plaster facades in neutral tones, wide open forecourt bays for multiple fuel dispensers, integrated canopy support structures, and extensive site groundwork including concrete pads and utility preparations. Designed to Petroly\'s high standards for safety, efficiency, and customer convenience, this development includes spacious pump areas, future retail/convenience shop integration, and durable construction suited to the Eastern Province\'s high-traffic coastal routes.',
-        duration: '??? Months',
+        duration: '9 Months',
         thumbnail: 'images/Projects/Project17/Thumbnail.jpg',
         images: [
             'images/Projects/Project17/Thumbnail.jpg',
@@ -282,7 +282,7 @@ const PROJECTS_DATA = [
         location: 'Dammam',
         title: 'Aldrees Fuel Station Project (Dammam)',
         description: 'High-quality Aldrees-branded fuel station delivered in Dammam. Featuring sleek contemporary design with smooth rendered exteriors, strategic layout for smooth traffic flow, durable concrete paving, advanced safety features including barriers and lighting, and a functional service building optimized for retail and fueling operations. The project highlights precise execution, timely completion, and alignment with Aldrees\' reputation for modern, reliable petroleum infrastructure across the Kingdom.',
-        duration: '??? Months',
+        duration: '7 Months',
         thumbnail: 'images/Projects/Project18/Thumbnail.jpg',
         images: [
             'images/Projects/Project18/Thumbnail.jpg',
