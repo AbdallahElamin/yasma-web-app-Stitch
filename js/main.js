@@ -257,7 +257,7 @@
     article.innerHTML = `
       <div class="project-card-image">
         <img alt="${project.title}" src="${project.thumbnail}"
-             style="width: 100%; height: 100%; object-fit: cover;" />
+             style="width: 100%; height: 100%; object-fit: cover;" loading="lazy" />
         <div class="project-card-badge">${project.badge}</div>
       </div>
       <div class="project-card-content">

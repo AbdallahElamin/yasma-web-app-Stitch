@@ -2118,7 +2118,7 @@ h6 {
 /* CTA Section */
 .cta-section {
     position: relative;
-    background-color: var(--color-text-main-light);
+    background-color: #111827;
     padding: var(--spacing-3xl) 0;
     text-align: center;
     color: white;
