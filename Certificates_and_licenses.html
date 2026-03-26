@@ -21,7 +21,8 @@
             <!-- Logo -->
             <a href="index.html" class="nav-logo" aria-label="YASMA Contracting Co. - Home">
                 <div class="logo-icon">
-                    <img src="images/logo and other images/logo.png" alt="YASMA Contracting Co. Logo" />
+                    <img src="images/logo and other images/logo2.png" alt="YASMA Contracting Co. Logo" class="logo-light" />
+                    <img src="images/logo and other images/logo3.png" alt="YASMA Contracting Co. Logo" class="logo-dark" />
                 </div>
                 <div class="logo-text">
                     <span class="logo-title">YASMA</span>
@@ -104,7 +105,7 @@
                         <div class="cert-image-placeholder">
                             <span class="material-symbols-outlined">article</span>
                         </div>
-                        <img alt="Commercial Registration Document" class="cert-image-actual"
+                        <img loading="lazy"  alt="Commercial Registration Document" class="cert-image-actual"
                             src="images\certificates\9.png" />
                         <div class="cert-verified-badge">
                             <span class="material-symbols-outlined text-primary">verified</span>
@@ -136,7 +137,7 @@
                         <div class="cert-image-placeholder">
                             <span class="material-symbols-outlined">workspace_premium</span>
                         </div>
-                        <img alt="Chamber of Commerce Membership" class="cert-image-actual"
+                        <img loading="lazy"  alt="Chamber of Commerce Membership" class="cert-image-actual"
                             src="images\certificates\11.png" />
                         <div class="cert-verified-badge-left">
                             <span class="material-symbols-outlined text-primary">verified</span>
@@ -168,7 +169,7 @@
                         <div class="cert-image-placeholder">
                             <span class="material-symbols-outlined">construction</span>
                         </div>
-                        <img alt="Contractor Classification Certificate" class="cert-image-actual"
+                        <img loading="lazy"  alt="Contractor Classification Certificate" class="cert-image-actual"
                             src="images\certificates\13.png" />
                         <div class="cert-verified-badge">
                             <span class="material-symbols-outlined text-primary">verified</span>
@@ -200,7 +201,7 @@
                         <div class="cert-image-placeholder">
                             <span class="material-symbols-outlined">receipt_long</span>
                         </div>
-                        <img alt="VAT Registration Certificate" class="cert-image-actual"
+                        <img loading="lazy"  alt="VAT Registration Certificate" class="cert-image-actual"
                             src="images\certificates\12.png" />
                         <div class="cert-verified-badge-left">
                             <span class="material-symbols-outlined text-primary">verified</span>
@@ -222,51 +223,52 @@
                 </div>
             </div>
             <div class="cta-buttons" style="margin-top: 2rem">
-                    <a href="Contact_Us.html" class="btn-primary btn-large">Get a Quote</a>
+                <a href="Contact_Us.html" class="btn-primary btn-large">Get a Quote</a>
             </div>
         </section>
-    <!-- Lightbox Modal -->
-    <div id="lightbox-modal"
-        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 10000; align-items: center; justify-content: center;">
-        <button id="lightbox-close" aria-label="Close lightbox"
-            style="position: absolute; top: 2rem; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 10001;">
-            <span class="material-symbols-outlined" style="font-size: 2rem;">close</span>
-        </button>
-        <button id="lightbox-prev" aria-label="Previous image"
-            style="position: absolute; left: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
-            <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_left</span>
-        </button>
-        <button id="lightbox-next" aria-label="Next image"
-            style="position: absolute; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
-            <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_right</span>
-        </button>
-        <img id="lightbox-image" src="" alt="Full screen view"
-            style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 0.5rem;">
-    </div>
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal"
+            style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 10000; align-items: center; justify-content: center;">
+            <button id="lightbox-close" aria-label="Close lightbox"
+                style="position: absolute; top: 2rem; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 10001;">
+                <span class="material-symbols-outlined" style="font-size: 2rem;">close</span>
+            </button>
+            <button id="lightbox-prev" aria-label="Previous image"
+                style="position: absolute; left: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_left</span>
+            </button>
+            <button id="lightbox-next" aria-label="Next image"
+                style="position: absolute; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+                <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_right</span>
+            </button>
+            <img loading="lazy"  id="lightbox-image" src="" alt="Full screen view"
+                style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 0.5rem;">
+        </div>
 
-    <!-- Footer -->
-    <footer class="footer" style="margin-top: 0;">
-        <div class="footer-content footer-simple">
-            <div class="footer-flex">
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <h2 style="font-size: 1.125rem; font-weight: 700; color: white;">YASMA For Contracting Co.</h2>
-                    <p style="font-size: 0.875rem; color: #9CA3AF;">Building the future of Saudi Arabia with excellence
-                        and
-                        integrity.</p>
-                </div>
-                <div style="display: flex; gap: 2rem; font-size: 0.875rem; color: #9CA3AF;">
-                    <a class="footer-link" href="About_Us.html">About Us</a>
-                    <a class="footer-link" href="Our_Projects.html">Our Projects</a>
-                    <a class="footer-link" href="Services.html">Our Services</a>
-                    <span style="opacity: 0.5;">© 2026 YASMA. All rights reserved.</span>
+        <!-- Footer -->
+        <footer class="footer" style="margin-top: 0;">
+            <div class="footer-content footer-simple">
+                <div class="footer-flex">
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <h2 style="font-size: 1.125rem; font-weight: 700; color: white;">YASMA For Contracting Co.</h2>
+                        <p style="font-size: 0.875rem; color: #9CA3AF;">Building the future of Saudi Arabia with
+                            excellence
+                            and
+                            integrity.</p>
+                    </div>
+                    <div style="display: flex; gap: 2rem; font-size: 0.875rem; color: #9CA3AF;">
+                        <a class="footer-link" href="About_Us.html">About Us</a>
+                        <a class="footer-link" href="Our_Projects.html">Our Projects</a>
+                        <a class="footer-link" href="Services.html">Our Services</a>
+                        <span style="opacity: 0.5;">© 2026 YASMA. All rights reserved.</span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- JavaScript -->
-    <script defer src="js/transitions.js"></script>
-    <script defer src="js/main.js"></script>
-    <script defer src="js/certificates.js"></script>
+        </footer>
+        <!-- JavaScript -->
+        <script defer src="js/transitions.js"></script>
+        <script defer src="js/main.js"></script>
+        <script defer src="js/certificates.js"></script>
 </body>
 
 </html>

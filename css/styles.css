@@ -175,6 +175,15 @@
     --color-border: var(--color-border-dark);
 }
 
+/* Logo Theme Switching */
+[data-theme="light"] .logo-dark {
+    display: none;
+}
+
+[data-theme="dark"] .logo-light {
+    display: none;
+}
+
 /* ===================================
    BASE STYLES
    =================================== */
@@ -357,7 +366,6 @@ h6 {
     justify-content: center;
     width: 3rem;
     height: 3rem;
-    background-color: white;
     color: white;
     border-radius: var(--radius-sm);
     overflow: hidden;

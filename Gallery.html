@@ -24,13 +24,16 @@
             margin-bottom: 1.75rem;
             font-size: 0.95rem;
         }
+
         .gallery-details-table tr:not(:last-child) td {
             border-bottom: 1px solid var(--color-border);
         }
+
         .gallery-details-table td {
             padding: 0.75rem 1.2rem;
             vertical-align: middle;
         }
+
         .gallery-details-table td:first-child {
             font-weight: 700;
             color: var(--color-text-main);
@@ -40,9 +43,11 @@
             align-items: center;
             gap: 0.5rem;
         }
+
         .gallery-details-table td:last-child {
             color: var(--color-text-muted);
         }
+
         .gallery-details-table .td-inner {
             display: flex;
             align-items: center;
@@ -58,7 +63,8 @@
             <!-- Logo -->
             <a href="index.html" class="nav-logo" aria-label="YASMA Contracting Co. - Home">
                 <div class="logo-icon">
-                    <img src="images/logo and other images/logo.png" alt="YASMA Contracting Co. Logo" />
+                    <img src="images/logo and other images/logo2.png" alt="YASMA Contracting Co. Logo" class="logo-light" />
+                    <img src="images/logo and other images/logo3.png" alt="YASMA Contracting Co. Logo" class="logo-dark" />
                 </div>
                 <div class="logo-text">
                     <span class="logo-title">YASMA</span>
@@ -139,28 +145,47 @@
                 <div style="display: grid; gap: 2rem;">
                     <!-- Project Header -->
                     <div>
-                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
-                            <span id="project-badge" class="project-card-badge" style="position: static; transform: none;">Commercial</span>
+                        <div
+                            style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+                            <span id="project-badge" class="project-card-badge"
+                                style="position: static; transform: none;">Commercial</span>
                         </div>
-                        <h1 class="page-title" id="project-title" style="margin-bottom: 1.5rem; color: var(--color-text-main);">Project Title</h1>
+                        <h1 class="page-title" id="project-title"
+                            style="margin-bottom: 1.5rem; color: var(--color-text-main);">Project Title</h1>
 
                         <!-- Details Table -->
                         <table class="gallery-details-table" id="project-details-table">
                             <tbody>
                                 <tr id="row-name">
-                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">badge</span>Project Name</div></td>
+                                    <td>
+                                        <div class="td-inner"><span class="material-symbols-outlined"
+                                                style="font-size:1.1rem;color:var(--color-primary)">badge</span>Project
+                                            Name</div>
+                                    </td>
                                     <td id="detail-name">—</td>
                                 </tr>
                                 <tr id="row-budget">
-                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">payments</span>Budget</div></td>
+                                    <td>
+                                        <div class="td-inner"><span class="material-symbols-outlined"
+                                                style="font-size:1.1rem;color:var(--color-primary)">payments</span>Budget
+                                        </div>
+                                    </td>
                                     <td id="detail-budget">—</td>
                                 </tr>
                                 <tr id="row-duration">
-                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">schedule</span>Duration</div></td>
+                                    <td>
+                                        <div class="td-inner"><span class="material-symbols-outlined"
+                                                style="font-size:1.1rem;color:var(--color-primary)">schedule</span>Duration
+                                        </div>
+                                    </td>
                                     <td id="detail-duration">—</td>
                                 </tr>
                                 <tr id="row-location">
-                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">location_on</span>Location</div></td>
+                                    <td>
+                                        <div class="td-inner"><span class="material-symbols-outlined"
+                                                style="font-size:1.1rem;color:var(--color-primary)">location_on</span>Location
+                                        </div>
+                                    </td>
                                     <td id="detail-location">—</td>
                                 </tr>
                             </tbody>
@@ -203,27 +228,28 @@
             style="position: absolute; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
             <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_right</span>
         </button>
-        <img id="lightbox-image" src="" alt="Full screen view"
+        <img loading="lazy"  id="lightbox-image" src="" alt="Full screen view"
             style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 0.5rem;">
     </div>
 
     <!-- Footer -->
     <footer class="footer" style="margin-top: 0;">
-    <div class="footer-content footer-simple">
-        <div class="footer-flex">
-        <div style="display: flex; flex-direction: column; gap: 1rem;">
-            <h2 style="font-size: 1.125rem; font-weight: 700; color: white;">YASMA For Contracting Co.</h2>
-            <p style="font-size: 0.875rem; color: #9CA3AF;">Building the future of Saudi Arabia with excellence and
-            integrity.</p>
+        <div class="footer-content footer-simple">
+            <div class="footer-flex">
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <h2 style="font-size: 1.125rem; font-weight: 700; color: white;">YASMA For Contracting Co.</h2>
+                    <p style="font-size: 0.875rem; color: #9CA3AF;">Building the future of Saudi Arabia with excellence
+                        and
+                        integrity.</p>
+                </div>
+                <div style="display: flex; gap: 2rem; font-size: 0.875rem; color: #9CA3AF;">
+                    <a class="footer-link" href="About_Us.html">About Us</a>
+                    <a class="footer-link" href="Our_Projects.html">Our Projects</a>
+                    <a class="footer-link" href="Services.html">Our Services</a>
+                    <span style="opacity: 0.5;">© 2026 YASMA. All rights reserved.</span>
+                </div>
+            </div>
         </div>
-        <div style="display: flex; gap: 2rem; font-size: 0.875rem; color: #9CA3AF;">
-            <a class="footer-link" href="About_Us.html">About Us</a>
-            <a class="footer-link" href="Our_Projects.html">Our Projects</a>
-            <a class="footer-link" href="Services.html">Our Services</a>
-            <span style="opacity: 0.5;">© 2026 YASMA. All rights reserved.</span>
-        </div>
-        </div>
-    </div>
     </footer>
 
     <!-- JavaScript -->
