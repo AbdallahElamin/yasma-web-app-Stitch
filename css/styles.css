@@ -796,7 +796,7 @@ h6 {
 
 @media (min-width: 481px) {
     .stats-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -848,10 +848,18 @@ h6 {
 .stat-label {
     margin-top: var(--spacing-sm);
     font-size: var(--font-size-sm);
-    font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-bold);
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--color-text-muted);
+    color: white;
+}
+
+.stat-desc {
+    margin-top: var(--spacing-xs);
+    font-size: 0.78rem;
+    line-height: 1.45;
+    color: rgba(255, 255, 255, 0.55);
+    max-width: 180px;
 }
 
 /* ===================================

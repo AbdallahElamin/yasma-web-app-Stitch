@@ -142,16 +142,16 @@ const servicesData = [
             "images/Services/Interior/work01/3.jpg"
         ]
     },
-    {
-        id: "service-interior-02",
-        category: "Interior",
-        title: "Wood, Ceramic, and Marble Cladding Works",
-        description: "Premium interior cladding installation using wood, ceramic, and marble materials. Our skilled craftsmen deliver exceptional wall and floor cladding with meticulous attention to pattern alignment, jointing, and finishing, creating elegant interior spaces that combine durability with timeless aesthetic appeal.",
-        thumbnail: "images/Services/Interior/work02/Thumbnail.jpg",
-        images: [
-            "images/Services/Interior/work02/Thumbnail.jpg"
-        ]
-    },
+    // {
+    //     id: "service-interior-02",
+    //     category: "Interior",
+    //     title: "Wood, Ceramic, and Marble Cladding Works",
+    //     description: "Premium interior cladding installation using wood, ceramic, and marble materials. Our skilled craftsmen deliver exceptional wall and floor cladding with meticulous attention to pattern alignment, jointing, and finishing, creating elegant interior spaces that combine durability with timeless aesthetic appeal.",
+    //     thumbnail: "images/Services/Interior/work02/Thumbnail.jpg",
+    //     images: [
+    //         "images/Services/Interior/work02/Thumbnail.jpg"
+    //     ]
+    // },
     {
         id: "service-interior-03",
         category: "Interior",

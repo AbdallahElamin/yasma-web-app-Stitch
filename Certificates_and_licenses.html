@@ -225,7 +225,24 @@
                     <a href="Contact_Us.html" class="btn-primary btn-large">Get a Quote</a>
             </div>
         </section>
-    </main>
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal"
+        style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.95); z-index: 10000; align-items: center; justify-content: center;">
+        <button id="lightbox-close" aria-label="Close lightbox"
+            style="position: absolute; top: 2rem; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s; z-index: 10001;">
+            <span class="material-symbols-outlined" style="font-size: 2rem;">close</span>
+        </button>
+        <button id="lightbox-prev" aria-label="Previous image"
+            style="position: absolute; left: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+            <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_left</span>
+        </button>
+        <button id="lightbox-next" aria-label="Next image"
+            style="position: absolute; right: 2rem; background: rgba(255, 255, 255, 0.1); border: 2px solid rgba(255, 255, 255, 0.3); color: white; width: 3rem; height: 3rem; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.3s;">
+            <span class="material-symbols-outlined" style="font-size: 2rem;">chevron_right</span>
+        </button>
+        <img id="lightbox-image" src="" alt="Full screen view"
+            style="max-width: 90%; max-height: 90%; object-fit: contain; border-radius: 0.5rem;">
+    </div>
 
     <!-- Footer -->
     <footer class="footer" style="margin-top: 0;">
@@ -249,6 +266,7 @@
     <!-- JavaScript -->
     <script defer src="js/transitions.js"></script>
     <script defer src="js/main.js"></script>
+    <script defer src="js/certificates.js"></script>
 </body>
 
 </html>

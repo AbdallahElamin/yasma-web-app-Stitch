@@ -6,8 +6,9 @@
 (function () {
     'use strict';
 
-    // Only run on Gallery.html
-    if (!window.location.pathname.includes('Gallery.html')) {
+    // Only run on Gallery.html (or /Gallery when served without extension)
+    const path = window.location.pathname;
+    if (!path.includes('Gallery.html') && !path.endsWith('/Gallery') && !path.endsWith('/gallery')) {
         return;
     }
 
@@ -104,23 +105,37 @@
             badgeEl.style.display = 'inline-block';
         }
 
+        const detailName = document.getElementById('detail-name');
+        if (detailName) detailName.textContent = project.title;
+
+        // Ensure table is visible
+        const table = document.getElementById('project-details-table');
+        if (table) table.style.display = '';
+
+        const detailBudget = document.getElementById('detail-budget');
+        if (detailBudget) detailBudget.textContent = project.budget || 'N/A';
+
+        const detailDuration = document.getElementById('detail-duration');
+        if (detailDuration) detailDuration.textContent = project.duration || 'N/A';
+
+        const detailLocation = document.getElementById('detail-location');
+        if (detailLocation) detailLocation.textContent = project.location || 'N/A';
+
+        // Show all table rows for projects
+        ['row-name', 'row-budget', 'row-duration', 'row-location'].forEach(id => {
+            const row = document.getElementById(id);
+            if (row) row.style.display = '';
+        });
+
         const descriptionEl = document.getElementById('project-description');
         if (descriptionEl) descriptionEl.textContent = project.description;
 
-        // Show project specific elements
+        // Hide old inline location/duration containers (no longer used)
         const locationContainer = document.getElementById('project-location-container');
-        if (locationContainer) {
-            locationContainer.style.display = 'flex';
-            const locationEl = document.getElementById('project-location');
-            if (locationEl) locationEl.textContent = project.location;
-        }
+        if (locationContainer) locationContainer.style.display = 'none';
 
         const durationContainer = document.getElementById('project-duration-container');
-        if (durationContainer) {
-            durationContainer.style.display = 'flex';
-            const durationEl = document.getElementById('project-duration');
-            if (durationEl) durationEl.textContent = project.duration;
-        }
+        if (durationContainer) durationContainer.style.display = 'none';
     }
 
     function updatePageForService(service) {
@@ -162,10 +177,14 @@
             badgeEl.style.display = 'inline-block';
         }
 
+        // Hide details table for services — redundant since only Name is shown
+        const table = document.getElementById('project-details-table');
+        if (table) table.style.display = 'none';
+
         const descriptionEl = document.getElementById('project-description');
         if (descriptionEl) descriptionEl.textContent = service.description;
 
-        // Hide project specific elements
+        // Hide old inline location/duration containers
         const locationContainer = document.getElementById('project-location-container');
         if (locationContainer) locationContainer.style.display = 'none';
 

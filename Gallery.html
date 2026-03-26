@@ -12,6 +12,43 @@
         rel="stylesheet" />
     <!-- Stylesheet -->
     <link href="css/styles.css" rel="stylesheet" />
+    <style>
+        .gallery-details-table {
+            width: 100%;
+            max-width: 700px;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1.5px solid var(--color-border);
+            border-radius: 0.75rem;
+            overflow: hidden;
+            margin-bottom: 1.75rem;
+            font-size: 0.95rem;
+        }
+        .gallery-details-table tr:not(:last-child) td {
+            border-bottom: 1px solid var(--color-border);
+        }
+        .gallery-details-table td {
+            padding: 0.75rem 1.2rem;
+            vertical-align: middle;
+        }
+        .gallery-details-table td:first-child {
+            font-weight: 700;
+            color: var(--color-text-main);
+            background: var(--color-bg-alt, #f8f9fa);
+            width: 38%;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .gallery-details-table td:last-child {
+            color: var(--color-text-muted);
+        }
+        .gallery-details-table .td-inner {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -102,26 +139,36 @@
                 <div style="display: grid; gap: 2rem;">
                     <!-- Project Header -->
                     <div>
-                        <div
-                            style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem; flex-wrap: wrap;">
-                            <span id="project-badge" class="project-card-badge"
-                                style="position: static; transform: none;">Commercial</span>
-                            <div id="project-duration-container"
-                                style="display: flex; align-items: center; gap: 0.5rem; color: var(--color-text-muted);">
-                                <span class="material-symbols-outlined" style="font-size: 1.25rem;">schedule</span>
-                                <span id="project-duration" style="font-size: 0.875rem; font-weight: 600;">6
-                                    Months</span>
-                            </div>
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.25rem; flex-wrap: wrap;">
+                            <span id="project-badge" class="project-card-badge" style="position: static; transform: none;">Commercial</span>
                         </div>
-                        <h1 class="page-title" id="project-title"
-                            style="margin-bottom: 1rem; color: var(--color-text-main);">Project Title</h1>
-                        <div id="project-location-container" class="project-card-location"
-                            style="font-size: 1rem; margin-bottom: 1.5rem;">
-                            <span class="material-symbols-outlined">location_on</span>
-                            <span id="project-location">Location</span>
-                        </div>
+                        <h1 class="page-title" id="project-title" style="margin-bottom: 1.5rem; color: var(--color-text-main);">Project Title</h1>
+
+                        <!-- Details Table -->
+                        <table class="gallery-details-table" id="project-details-table">
+                            <tbody>
+                                <tr id="row-name">
+                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">badge</span>Project Name</div></td>
+                                    <td id="detail-name">—</td>
+                                </tr>
+                                <tr id="row-budget">
+                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">payments</span>Budget</div></td>
+                                    <td id="detail-budget">—</td>
+                                </tr>
+                                <tr id="row-duration">
+                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">schedule</span>Duration</div></td>
+                                    <td id="detail-duration">—</td>
+                                </tr>
+                                <tr id="row-location">
+                                    <td><div class="td-inner"><span class="material-symbols-outlined" style="font-size:1.1rem;color:var(--color-primary)">location_on</span>Location</div></td>
+                                    <td id="detail-location">—</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- Description -->
                         <p id="project-description"
-                            style="font-size: 1.125rem; line-height: 1.7; color: var(--color-text-muted); max-width: 900px;">
+                            style="font-size: 1.05rem; line-height: 1.75; color: var(--color-text-muted); max-width: 900px;">
                             Project description will appear here.
                         </p>
                     </div>
