@@ -2831,3 +2831,45 @@ h6 {
         font-size: 0.5625rem;
     }
 }
+
+/* ===================================
+   GALLERY PAGE - Details Table (FINAL FIX)
+   =================================== */
+#project-details-table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: separate;
+    border: 1.5px solid var(--color-border);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: 1.75rem;
+    font-size: 0.95rem;
+    table-layout: fixed;
+    /* forces the 38% width */
+}
+
+#project-details-table tr:not(:last-child) td {
+    border-bottom: 1px solid var(--color-border);
+}
+
+#project-details-table td {
+    padding: 0.75rem 1rem;
+    vertical-align: middle;
+}
+
+/* Left column (labels) */
+#project-details-table td:first-child {
+    font-weight: 700;
+    color: var(--color-text-main);
+    background: var(--color-bg-alt, #f8f9fa);
+    width: 20%;
+    padding: 0.75rem 0.25rem 0.75rem 1.2rem !important;
+    /* tiny right padding */
+}
+
+/* Right column (values) */
+#project-details-table td:last-child {
+    color: var(--color-text-muted);
+    padding: 0.75rem 1.2rem 0.75rem 1.2rem !important;
+    /* tiny left padding */
+}
